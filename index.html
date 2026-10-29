@@ -73,6 +73,20 @@ footer{background:#102a24;color:#e7eee6;padding:35px 0}.footer-inner{display:fle
 .pres-point{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;font-size:clamp(16px,1.8vw,21px);font-weight:700}
 .pres-point:before{content:"✳";color:var(--orange);margin-right:10px}
 .pres-notes{display:none;margin-top:24px;background:#e9eee3;border-left:4px solid var(--green);padding:18px 20px;border-radius:0 14px 14px 0;max-width:850px}
+.pres-challenge{display:none;margin-top:24px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(16px,3vw,26px);max-width:850px}
+.pres-challenge.show{display:block}
+.pres-challenge h3{font-size:clamp(20px,2.5vw,28px);margin:0 0 8px}
+.pres-challenge .challenge-hint{font-size:15px;margin:0 0 16px}
+.challenge-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.challenge-option{border:1px solid var(--line);background:#fffdf7;color:var(--ink);padding:14px 12px;border-radius:12px;font-weight:800;cursor:pointer;text-align:left}
+.challenge-option:hover,.challenge-option:focus-visible{border-color:var(--green);outline:2px solid #245b4730}
+.challenge-option:disabled{cursor:default;opacity:.82}
+.challenge-option.correct{background:#e4f1d8;border-color:#568043}
+.challenge-option.incorrect{background:#fbe9dc;border-color:#c46b3b}
+.challenge-feedback{display:none;margin-top:14px;padding:14px 16px;border-radius:12px;background:#e9eee3;line-height:1.55}
+.challenge-feedback.show{display:block}
+.challenge-feedback strong{display:block;margin-bottom:4px}
+@media(max-width:600px){.challenge-options{grid-template-columns:1fr}.challenge-option{padding:12px}}
 .pres-notes.show{display:block}
 .pres-notes strong{display:block;margin-bottom:6px}
 .pres-notes p{font-size:16px;margin:0;color:var(--ink)}
@@ -163,7 +177,13 @@ footer{background:#102a24;color:#e7eee6;padding:35px 0}.footer-inner{display:fle
   <div class="pres-progress"><span id="presProgress"></span></div>
   <header class="pres-top"><div class="pres-brand">KINH TẾ KHÔNG KHÔ</div><div class="pres-count" id="presCount">1 / 10</div><button class="pres-close" id="presClose" type="button" aria-label="Thoát chế độ thuyết trình">✕ Thoát</button></header>
   <main class="pres-content" id="presContent" aria-live="polite">
-    <div class="pres-eyebrow" id="presEyebrow"></div><h2 id="presTitle"></h2><p id="presIntro"></p><div class="pres-points" id="presPoints"></div><div class="pres-notes" id="presNotes"><strong>Gợi ý lời thuyết trình</strong><p id="presNotesText"></p></div>
+    <div class="pres-eyebrow" id="presEyebrow"></div><h2 id="presTitle"></h2><p id="presIntro"></p><div class="pres-points" id="presPoints"></div>
+    <section class="pres-challenge" id="presChallenge" aria-label="Thử thách tương tác">
+      <h3 id="challengeTitle">Thử thách cả lớp</h3>
+      <p class="challenge-hint" id="challengeHint">Cùng dự đoán đáp án trước khi người thuyết trình công bố.</p>
+      <div class="challenge-options" id="challengeOptions"></div>
+      <div class="challenge-feedback" id="challengeFeedback" aria-live="polite"></div>
+    </section><div class="pres-notes" id="presNotes"><strong>Gợi ý lời thuyết trình</strong><p id="presNotesText"></p></div>
   </main>
   <footer class="pres-bottom"><button class="pres-notes-toggle" id="presNotesToggle" type="button">☷ Gợi ý lời nói</button><div style="display:flex;gap:8px"><button class="pres-nav" id="presPrev" type="button">← Trước</button><button class="pres-nav primary" id="presNext" type="button">Tiếp theo →</button></div></footer>
 </div>
@@ -181,6 +201,7 @@ const presSlides=[
 {eyebrow:'05 · Công dân',title:'Vai trò của Nhà nước',intro:'Nhà nước xây dựng quy tắc chung, cung cấp dịch vụ công và thực hiện các chính sách nhằm phục vụ xã hội.',points:['Thuế là một nguồn thu ngân sách','Ngân sách hỗ trợ các nhiệm vụ công','Quy định giúp điều chỉnh hoạt động kinh tế','Người dân cần tìm hiểu quyền và nghĩa vụ'],notes:'Có thể nêu ví dụ trường học công, đường giao thông hoặc dịch vụ y tế công. Tránh khẳng định rằng mọi dịch vụ công đều chỉ được tài trợ từ thuế.'},
 {eyebrow:'06 · Pháp luật',title:'Quyền đi cùng trách nhiệm',intro:'Hiểu pháp luật giúp mỗi người biết quyền của mình, thực hiện nghĩa vụ và tôn trọng quyền của người khác.',points:['Tìm hiểu quy tắc áp dụng','Thực hiện đúng quy định','Tôn trọng quyền của người khác','Kiểm tra nguồn chính thức khi cần'],notes:'Dùng tình huống gần gũi như tuân thủ quy tắc giao thông hoặc sử dụng nội dung trên mạng có trách nhiệm. Nội dung trang chỉ hỗ trợ học tập, không thay thế tư vấn pháp lý.'},
 {eyebrow:'Tình huống tương tác',title:'Bạn có 100.000 đồng cho cả tuần',intro:'Bạn cần tiền đi lại, muốn tiết kiệm và cũng muốn mua món ăn vặt mình thích. Bạn sẽ lập kế hoạch thế nào?',points:['Tính trước khoản bắt buộc','Chọn mục tiêu tiết kiệm phù hợp','Cân nhắc khoản chi cho sở thích','Giải thích vì sao phương án đó hợp lý'],notes:'Mời cả lớp đề xuất cách chia tiền. Không cần ép mọi người có cùng đáp án; yêu cầu họ giải thích ưu tiên và kiểm tra xem kế hoạch có đáp ứng khoản cần thiết hay không.'},
+{eyebrow:'Thử thách cả lớp',title:'Quầy nước hôm nay lời bao nhiêu?',intro:'Một quầy nước bán được 10 ly, mỗi ly 10.000 đồng. Tổng chi phí nguyên liệu và cốc là 60.000 đồng. Hãy cùng dự đoán kết quả!',points:['Doanh thu = số lượng bán × giá bán','Lợi nhuận = doanh thu − tổng chi phí'],notes:'Cho cả lớp giơ tay hoặc trao đổi nhanh trước khi bấm đáp án. Doanh thu là 100.000 đồng; lấy doanh thu trừ chi phí 60.000 đồng thì lợi nhuận là 40.000 đồng.',challenge:{title:'Chọn đáp án đúng',hint:'Cả lớp hãy biểu quyết trước khi bạn bấm để hiện lời giải.',options:[{label:'A · Lợi nhuận 100.000 đồng',correct:false},{label:'B · Lợi nhuận 40.000 đồng',correct:true},{label:'C · Lợi nhuận 60.000 đồng',correct:false}],feedback:'Doanh thu = 10 × 10.000 = 100.000 đồng. Lợi nhuận = 100.000 − 60.000 = 40.000 đồng.'}},
 {eyebrow:'Ôn tập nhanh',title:'Ba câu hỏi để nhớ lâu',intro:'Dừng lại một chút và thử trả lời trước khi xem lại nội dung.',points:['Chi phí cơ hội là gì?','Vì sao nên lập ngân sách?','Doanh thu khác lợi nhuận như thế nào?','Kinh doanh có trách nhiệm thể hiện ở đâu?'],notes:'Mời 2–3 bạn trả lời. Chốt lại: chi phí cơ hội là giá trị phương án tốt nhất bị bỏ qua; ngân sách giúp quản lý thu chi; lợi nhuận bằng doanh thu trừ tổng chi phí.'},
 {eyebrow:'Kết luận',title:'Hiểu để lựa chọn tốt hơn',intro:'Kiến thức kinh tế giúp chúng ta cân nhắc nguồn lực, quản lý tiền và hiểu trách nhiệm của mình trong cộng đồng.',points:['Biết ưu tiên khi lựa chọn','Quản lý tiền có kế hoạch','Đánh giá hoạt động kinh doanh','Tôn trọng quy tắc và trách nhiệm'],notes:'Kết thúc bằng câu: “Kinh tế không xa vời — nó bắt đầu từ lựa chọn nhỏ nhất mỗi ngày.” Cảm ơn cả lớp và mời đặt câu hỏi.'}
 ];
@@ -193,6 +214,15 @@ function renderPres(){
  document.getElementById('presIntro').textContent=s.intro;
  document.getElementById('presPoints').innerHTML=s.points.map(x=>'<div class="pres-point"></div>').join('');
  [...document.querySelectorAll('.pres-point')].forEach((el,i)=>el.textContent=s.points[i]);
+ const challenge=document.getElementById('presChallenge');
+ const hasChallenge=Boolean(s.challenge);
+ challenge.classList.toggle('show',hasChallenge);
+ document.getElementById('challengeFeedback').classList.remove('show');
+ document.getElementById('challengeFeedback').textContent='';
+ document.getElementById('challengeTitle').textContent=hasChallenge?s.challenge.title:'';
+ document.getElementById('challengeHint').textContent=hasChallenge?s.challenge.hint:'';
+ document.getElementById('challengeOptions').innerHTML=hasChallenge?s.challenge.options.map((o,i)=>'<button type="button" class="challenge-option" data-challenge-option="'+i+'"></button>').join(''):'';
+ if(hasChallenge){[...document.querySelectorAll('.challenge-option')].forEach((el,i)=>el.textContent=s.challenge.options[i].label)}
  document.getElementById('presNotesText').textContent=s.notes;
  document.getElementById('presCount').textContent=(presIndex+1)+' / '+presSlides.length;
  document.getElementById('presProgress').style.width=((presIndex+1)/presSlides.length*100)+'%';
@@ -207,8 +237,24 @@ document.getElementById('presentLaunch').addEventListener('click',openPres);
 document.getElementById('presClose').addEventListener('click',closePres);
 document.getElementById('presPrev').addEventListener('click',()=>{if(presIndex>0){presIndex--;renderPres()}});
 document.getElementById('presNext').addEventListener('click',()=>{if(presIndex<presSlides.length-1){presIndex++;renderPres()}else closePres()});
+document.getElementById('challengeOptions').addEventListener('click',e=>{
+ const button=e.target.closest('[data-challenge-option]');
+ if(!button)return;
+ const s=presSlides[presIndex];
+ if(!s.challenge)return;
+ const index=Number(button.dataset.challengeOption);
+ const option=s.challenge.options[index];
+ document.querySelectorAll('.challenge-option').forEach((el,i)=>{
+   el.disabled=true;
+   if(s.challenge.options[i].correct)el.classList.add('correct');
+   else if(i===index)el.classList.add('incorrect');
+ });
+ const feedback=document.getElementById('challengeFeedback');
+ feedback.innerHTML='<strong>'+(option.correct?'Chính xác!':'Chưa đúng — cùng xem cách tính nhé.')+'</strong>'+s.challenge.feedback;
+ feedback.classList.add('show');
+});
 document.getElementById('presNotesToggle').addEventListener('click',()=>{const n=document.getElementById('presNotes');const show=!n.classList.contains('show');n.classList.toggle('show',show);document.getElementById('presNotesToggle').textContent=show?'☷ Ẩn gợi ý lời nói':'☷ Gợi ý lời nói'});
-document.addEventListener('keydown',e=>{if(!pres.classList.contains('open'))return;if(e.key==='Escape'){closePres();return}if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();if(presIndex<presSlides.length-1){presIndex++;renderPres()}else closePres()}if(e.key==='ArrowLeft'){e.preventDefault();if(presIndex>0){presIndex--;renderPres()}}});
+document.addEventListener('keydown',e=>{if(!pres.classList.contains('open'))return;if(e.key==='Escape'){closePres();return}if(e.target.closest('button'))return;if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();if(presIndex<presSlides.length-1){presIndex++;renderPres()}else closePres()}if(e.key==='ArrowLeft'){e.preventDefault();if(presIndex>0){presIndex--;renderPres()}}});
 
 const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navlinks');
 menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});
