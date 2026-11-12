@@ -4,267 +4,287 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#102a24">
-<meta name="description" content="Góc học tập Giáo dục kinh tế và pháp luật — hiểu kinh tế, làm chủ lựa chọn, sống có trách nhiệm.">
-<title>Kinh Tế Không Khô — Góc học tập</title>
+<meta name="description" content="KINH TẾ KHÔNG KHÔ — Bài thuyết trình tương tác về Giáo dục kinh tế và pháp luật lớp 10.">
+<title>KINH TẾ KHÔNG KHÔ — Bài thuyết trình</title>
 <style>
-:root{--bg:#f5f2e9;--paper:#fffdf7;--ink:#18352d;--muted:#63736a;--green:#245b47;--lime:#c9e27b;--orange:#e78a51;--line:#dfe4d8;--shadow:0 18px 50px #18352d12}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Arial,"Segoe UI",sans-serif}a{color:inherit}button,input{font:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#f5f2e9eF;backdrop-filter:blur(14px);border-bottom:1px solid #dfe4d8}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;letter-spacing:-.04em}.logo-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--green);color:var(--lime);font-size:20px}.links{display:flex;gap:22px;align-items:center}.links a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:700}.links a:hover{color:var(--green)}.menu{display:none;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:8px 12px;color:var(--ink)}
-.hero{padding:78px 0 58px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:2px;background:var(--orange)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(44px,6vw,76px);line-height:1.06;letter-spacing:-.045em;margin:20px 0;font-weight:800}.hero h1 em{font:inherit;font-style:normal;color:var(--green)}.hero-copy{font-size:18px;color:var(--muted);max-width:560px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:12px 18px;text-decoration:none;font-weight:800;border:1px solid var(--green);cursor:pointer;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--green);color:white}.btn-secondary{background:transparent;color:var(--green)}.hero-art{min-height:390px;position:relative;display:grid;place-items:center}.orbit{position:absolute;border:1px solid #b9c9b7;border-radius:50%;width:340px;height:340px;transform:rotate(-22deg)}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #cbd7c8;border-radius:50%;inset:25px}.orbit:after{inset:55px}.note-card{position:relative;z-index:1;width:min(340px,90%);padding:28px;background:var(--green);color:white;border-radius:24px;box-shadow:0 28px 70px #153d2e30;transform:rotate(3deg)}.note-card .small{font-size:12px;letter-spacing:.13em;color:var(--lime);font-weight:800;text-transform:uppercase}.note-card h2{font:800 30px/1.25 Arial,"Segoe UI",sans-serif;letter-spacing:-.035em;margin:16px 0}.note-card p{color:#d9e5dc;font-size:14px}.note-bottom{display:flex;justify-content:space-between;border-top:1px solid #ffffff38;padding-top:15px;font-size:12px;color:var(--lime)}.sticker{position:absolute;right:1%;top:12%;background:var(--lime);color:var(--ink);border-radius:50%;width:92px;height:92px;display:grid;place-items:center;text-align:center;font-size:12px;line-height:1.2;font-weight:900;transform:rotate(10deg)}.sticker span{font-size:24px;display:block}
-.ticker{background:var(--lime);padding:13px 0;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;overflow:hidden}.ticker-inner{display:flex;justify-content:space-around;gap:24px;flex-wrap:wrap}.ticker b{font-weight:900}.section{padding:78px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:30px}.section-head h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.05em;line-height:1.1;margin:10px 0 0}.section-head p{max-width:410px;color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow);transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-5px);border-color:#a5bca8}.card-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:#e7eddf;font-size:23px;margin-bottom:18px}.card h3{font-size:20px;letter-spacing:-.025em;margin-bottom:8px}.card p{color:var(--muted);font-size:14px;margin-bottom:16px}.tag{display:inline-block;border-radius:99px;padding:5px 10px;background:#edf1e6;color:var(--green);font-size:11px;font-weight:900}.topic-card{cursor:pointer;text-align:left;color:inherit;width:100%;height:100%;font:inherit}.topic-card .open-label{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:13px;font-weight:800;color:var(--green)}
-.split{background:#e9eee3}.split-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:start}.split h2{font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-.05em}.split p{color:var(--muted)}.example{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px}.example-top{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:18px}.example-top h3{margin:0}.case-label{color:#a55b2d;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.choice-list{display:grid;gap:10px}.choice{border:1px solid var(--line);background:white;color:var(--ink);padding:13px 15px;border-radius:12px;text-align:left;cursor:pointer;display:flex;gap:12px;align-items:flex-start}.choice:hover{border-color:var(--green)}.choice .letter{flex:0 0 27px;height:27px;border-radius:8px;background:#e9eee3;display:grid;place-items:center;font-size:12px;font-weight:900}.choice.selected{border-color:var(--green);background:#f1f6e9}.feedback{margin-top:14px;border-radius:12px;background:#edf1e6;padding:14px;color:var(--green);font-size:14px;display:none}.feedback.show{display:block}.feedback strong{display:block;margin-bottom:4px}
-.tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.tool{padding:25px;background:var(--green);color:white;border-radius:20px}.tool:nth-child(2){background:#f1d8c4;color:var(--ink)}.tool h3{font-size:23px;margin-bottom:8px}.tool p{font-size:14px;opacity:.8}.flashcard{border:1px dashed #ffffff70;border-radius:14px;padding:18px;margin-top:18px;min-height:115px;display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;font-weight:800}.tool:nth-child(2) .flashcard{border-color:#18352d60}.flashcard small{display:block;font-weight:400;margin-top:8px}.quiz-controls{display:flex;gap:10px;margin-top:14px}.quiz-controls button{border:1px solid #ffffff66;background:#ffffff12;color:white;border-radius:10px;padding:9px 13px;cursor:pointer;font-weight:700}.tool:nth-child(2) .quiz-controls button{border-color:#18352d40;color:var(--ink);background:#ffffff65}.progress{height:5px;background:#ffffff38;border-radius:9px;margin-top:14px;overflow:hidden}.progress span{display:block;height:100%;background:var(--lime);width:20%;transition:width .2s}
-.glossary{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden}.searchbar{padding:16px;border-bottom:1px solid var(--line);display:flex;gap:12px}.searchbar input{width:100%;border:1px solid var(--line);background:#fff;border-radius:10px;padding:11px 13px;outline:none}.searchbar input:focus{border-color:var(--green)}.terms{display:grid;grid-template-columns:1fr 1fr}.term{padding:18px 20px;border-bottom:1px solid var(--line)}.term:nth-child(odd){border-right:1px solid var(--line)}.term strong{display:block;margin-bottom:4px}.term span{color:var(--muted);font-size:14px}.empty{padding:20px;color:var(--muted);display:none}
-footer{background:#102a24;color:#e7eee6;padding:35px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-inner p{margin:5px 0 0;color:#b7c8bb;font-size:13px}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a{color:#d9e5dc;font-size:13px;text-decoration:none}.to-top{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border:0;border-radius:14px;background:var(--lime);color:var(--ink);font-weight:900;cursor:pointer;box-shadow:var(--shadow);display:none}.to-top.show{display:block}
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.reveal.visible{opacity:1;transform:none}
-
-
-/* Simple hand-drawn-style SVG illustrations for key learning cards */
-.card-illustration{display:block;width:100%;height:104px;margin:4px 0 18px;background:#f0f3e9;border-radius:14px}
-.card-illustration .stroke{stroke:#245b47;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
-.card-illustration .fill{fill:#c9e27b}
-.card-illustration .warm{fill:#e78a51}
-.card-illustration .paper{fill:#fffdf7;stroke:#245b47;stroke-width:2.5;stroke-linejoin:round}
-.topic-detail{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
-.topic-detail strong{color:var(--green)}
-.curriculum-art{width:100%;height:70px;display:block;margin:12px 0;background:#f0f3e9;border-radius:12px}
-.curriculum-art .stroke{stroke:#245b47;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;fill:none}
-.curriculum-art .fill{fill:#c9e27b}.curriculum-art .warm{fill:#e78a51}.curriculum-art .paper{fill:#fffdf7;stroke:#245b47;stroke-width:2}
-
-/* Curriculum and source library */
-.curriculum{background:#fffdf7;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
-.curriculum-intro{padding:22px 24px;background:#e9eee3;display:flex;justify-content:space-between;gap:22px;align-items:center}
-.curriculum-intro p{margin:0;color:var(--muted);max-width:650px;font-size:14px}
-.curriculum-groups{display:grid;grid-template-columns:repeat(3,1fr)}
-.curriculum-group{padding:22px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
-.curriculum-group:nth-child(3n){border-right:0}
-.curriculum-group .unit{font-size:11px;letter-spacing:.12em;color:#a55b2d;font-weight:900;text-transform:uppercase}
-.curriculum-group h3{font-size:18px;line-height:1.25;margin:8px 0 12px}
-.curriculum-group ol{margin:0;padding-left:20px;color:var(--muted);font-size:13px}
-.curriculum-group li{padding:3px 0}
-.curriculum-group p{font-size:13px;color:var(--muted);margin:10px 0 0}
-.source-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.source-link{display:flex;gap:12px;align-items:flex-start;padding:16px;border:1px solid var(--line);border-radius:14px;text-decoration:none;background:var(--paper)}
-.source-link:hover{border-color:var(--green)}
-.source-link b{display:block;font-size:14px}
-.source-link small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-@media(max-width:800px){.curriculum-groups{grid-template-columns:1fr 1fr}.curriculum-group:nth-child(3n){border-right:1px solid var(--line)}.curriculum-group:nth-child(2n){border-right:0}}
-@media(max-width:540px){.curriculum-groups,.source-list{grid-template-columns:1fr}.curriculum-group,.curriculum-group:nth-child(3n){border-right:0}.curriculum-intro{align-items:flex-start;flex-direction:column}}
-
-@media(max-width:800px){.hero-grid,.split-grid{grid-template-columns:1fr;gap:25px}.hero{padding-top:48px}.hero-art{min-height:330px}.orbit{width:290px;height:290px}.section{padding:58px 0}.cards{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}.links{display:none;position:absolute;top:72px;left:0;right:0;padding:18px 22px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.sticker{right:5%;top:2%}}
-@media(max-width:540px){.wrap{width:min(100% - 28px,1120px)}h1{font-size:46px}.hero-copy{font-size:16px}.hero-art{min-height:300px}.note-card{padding:22px}.note-card h2{font-size:25px}.cards,.tools-grid,.terms{grid-template-columns:1fr}.term:nth-child(odd){border-right:0}.footer-inner{align-items:flex-start;flex-direction:column}.ticker-inner{justify-content:flex-start}.section-head p{font-size:15px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
-
-/* Presentation mode */
-.present-launch{position:fixed;left:18px;bottom:18px;z-index:30;background:var(--green);color:#fff;border:0;border-radius:14px;padding:13px 17px;font-weight:800;box-shadow:0 10px 28px #18352d2b;cursor:pointer}
-.present-launch:hover{background:#173f31}
-.presentation{position:fixed;inset:0;z-index:100;background:var(--bg);display:none;grid-template-rows:auto 1fr auto;color:var(--ink)}
-.presentation.open{display:grid}
-.pres-top,.pres-bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px clamp(16px,4vw,48px);background:var(--paper);border-bottom:1px solid var(--line)}
-.pres-bottom{border-bottom:0;border-top:1px solid var(--line)}
-.pres-brand{font-size:13px;font-weight:900;letter-spacing:.04em}
-.pres-count{font-size:13px;color:var(--muted);font-weight:700}
-.pres-close,.pres-nav,.pres-notes-toggle{border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:10px 14px;border-radius:10px;font-weight:800;cursor:pointer}
-.pres-nav.primary{background:var(--green);color:white;border-color:var(--green)}
-.pres-content{width:min(1000px,calc(100% - 36px));margin:auto;padding:34px 0;overflow:auto;align-self:center}
-.pres-eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--green);font-weight:900}
-.pres-content h2{font-size:clamp(34px,6vw,68px);line-height:1.06;letter-spacing:-.045em;margin:16px 0 24px;max-width:900px}
-.pres-content p{font-size:clamp(18px,2.2vw,24px);line-height:1.55;color:var(--muted);max-width:850px}
-.pres-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
-.pres-point{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;font-size:clamp(16px,1.8vw,21px);font-weight:700}
-.pres-point:before{content:"✳";color:var(--orange);margin-right:10px}
-.pres-notes{display:none;margin-top:24px;background:#e9eee3;border-left:4px solid var(--green);padding:18px 20px;border-radius:0 14px 14px 0;max-width:850px}
-.pres-challenge{display:none;margin-top:24px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(16px,3vw,26px);max-width:850px}
-.pres-challenge.show{display:block}
-.pres-challenge h3{font-size:clamp(20px,2.5vw,28px);margin:0 0 8px}
-.pres-challenge .challenge-hint{font-size:15px;margin:0 0 16px}
-.challenge-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.challenge-option{border:1px solid var(--line);background:#fffdf7;color:var(--ink);padding:14px 12px;border-radius:12px;font-weight:800;cursor:pointer;text-align:left}
-.challenge-option:hover,.challenge-option:focus-visible{border-color:var(--green);outline:2px solid #245b4730}
-.challenge-option:disabled{cursor:default;opacity:.82}
-.challenge-option.correct{background:#e4f1d8;border-color:#568043}
-.challenge-option.incorrect{background:#fbe9dc;border-color:#c46b3b}
-.challenge-feedback{display:none;margin-top:14px;padding:14px 16px;border-radius:12px;background:#e9eee3;line-height:1.55}
-.challenge-feedback.show{display:block}
-.challenge-feedback strong{display:block;margin-bottom:4px}
-@media(max-width:600px){.challenge-options{grid-template-columns:1fr}.challenge-option{padding:12px}}
-.pres-notes.show{display:block}
-.pres-notes strong{display:block;margin-bottom:6px}
-.pres-notes p{font-size:16px;margin:0;color:var(--ink)}
-.pres-progress{height:4px;background:var(--line);position:absolute;top:0;left:0;right:0}
-.pres-progress span{height:100%;display:block;width:0;background:var(--orange);transition:width .2s}
-@media(max-width:600px){.pres-points{grid-template-columns:1fr}.pres-top,.pres-bottom{padding:12px}.pres-close,.pres-nav,.pres-notes-toggle{padding:9px 11px}.present-launch{left:10px;bottom:10px}.pres-content{padding:20px 0}}
-@media(prefers-reduced-motion:reduce){.pres-progress span{transition:none}}
-
+:root{--bg:#f4f1e8;--paper:#fffdf7;--ink:#18352d;--muted:#68766d;--green:#245b47;--deep:#102a24;--lime:#c9e27b;--orange:#e78a51;--line:#dfe4d8;--shadow:0 24px 70px #102a2418}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{font:16px/1.55 Arial,"Segoe UI",sans-serif;background:var(--deep);color:var(--ink);-webkit-font-smoothing:antialiased}button{font:inherit}button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.deck{height:100dvh;width:100%;display:grid;grid-template-rows:1fr auto;background:var(--bg);position:relative;overflow:hidden}
+.stage{position:relative;overflow:hidden;cursor:pointer;touch-action:pan-y}
+.slide{position:absolute;inset:0;padding:clamp(24px,5vw,76px) clamp(24px,7vw,112px) 48px;display:flex;flex-direction:column;justify-content:center;opacity:0;visibility:hidden;transform:translateX(36px) scale(.99);transition:opacity .38s ease,transform .48s cubic-bezier(.2,.7,.2,1),visibility .38s;overflow:auto;overscroll-behavior:contain;cursor:default}
+.slide.active{opacity:1;visibility:visible;transform:translateX(0) scale(1);z-index:2}
+.slide.exit-left{transform:translateX(-36px) scale(.99)}
+.slide.dark{background:var(--deep);color:#f5f2e9}.slide.green{background:#e7eddf}.slide.paper{background:var(--paper)}
+.slide:after{content:"";position:absolute;right:-130px;top:-180px;width:390px;height:390px;border:1px solid #245b4718;border-radius:50%;pointer-events:none}
+.slide.dark:after{border-color:#c9e27b22}
+.kicker{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:900;color:var(--green);margin-bottom:18px}
+.dark .kicker{color:var(--lime)}.kicker:before{content:"";width:27px;height:2px;background:var(--orange)}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(48px,8vw,108px);line-height:.98;letter-spacing:-.065em;max-width:950px;margin-bottom:24px}h1 em{color:var(--green);font-style:normal}.dark h1 em{color:var(--lime)}
+h2{font-size:clamp(36px,5.2vw,68px);letter-spacing:-.05em;line-height:1.04;margin-bottom:20px;max-width:1000px}
+h3{font-size:clamp(19px,2vw,25px);letter-spacing:-.025em;margin-bottom:9px}
+.lead{font-size:clamp(18px,2.2vw,25px);line-height:1.55;color:var(--muted);max-width:850px;margin-bottom:25px}.dark .lead{color:#c5d2c7}
+.small{font-size:13px;color:var(--muted)}.dark .small{color:#bdcbbf}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center;max-width:1200px}
+.hero-art{min-height:330px;display:grid;place-items:center;position:relative}
+.hero-orbit{width:min(31vw,340px);aspect-ratio:1;border:1px solid #245b4740;border-radius:50%;display:grid;place-items:center;position:relative}
+.hero-orbit:before,.hero-orbit:after{content:"";position:absolute;border:1px dashed #245b4740;border-radius:50%;inset:14%}
+.hero-orbit:after{inset:29%;border-style:solid}
+.coin{width:120px;height:120px;border-radius:36px;background:var(--green);color:var(--lime);display:grid;place-items:center;font-size:64px;font-weight:900;box-shadow:0 25px 50px #102a2430;transform:rotate(-8deg)}
+.float-tag{position:absolute;background:var(--paper);border:1px solid var(--line);padding:10px 14px;border-radius:13px;font-size:13px;font-weight:800;box-shadow:var(--shadow)}
+.float-tag.one{top:15%;left:-4%}.float-tag.two{right:-7%;top:44%}.float-tag.three{bottom:9%;left:5%}
+.pill{display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:8px 13px;font-size:12px;font-weight:800;color:var(--green);margin:4px 5px 4px 0}.dark .pill{border-color:#ffffff38;color:var(--lime)}
+.grid2,.grid3,.grid4{display:grid;gap:14px;margin-top:20px}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:clamp(17px,2.2vw,26px);box-shadow:0 10px 30px #102a2408;min-width:0}
+.dark .card{background:#19382f;border-color:#ffffff20;color:#f5f2e9;box-shadow:none}
+.card .icon{font-size:28px;margin-bottom:13px;display:block}.card p{color:var(--muted);font-size:15px;margin:0}.dark .card p{color:#c5d2c7}
+.card strong{color:var(--green)}.dark .card strong{color:var(--lime)}
+.big-number{font-size:clamp(42px,6vw,76px);font-weight:900;letter-spacing:-.06em;line-height:1;color:var(--green);margin-bottom:10px}.dark .big-number{color:var(--lime)}
+.quote{font-size:clamp(25px,4vw,46px);font-weight:800;line-height:1.18;letter-spacing:-.04em;max-width:850px}.quote-mark{color:var(--orange);font-size:1.4em}
+.flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:26px 0}.flow span{padding:14px 18px;background:var(--paper);border:1px solid var(--line);border-radius:13px;font-weight:800}.flow b{color:var(--orange);font-size:23px}
+.budget-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:stretch;margin-top:14px}
+.money-panel{background:var(--deep);color:white;border-radius:22px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;min-height:250px}
+.money-panel .amount{font-size:clamp(48px,7vw,82px);font-weight:900;letter-spacing:-.06em;color:var(--lime);line-height:1.05}
+.money-panel p{color:#c5d2c7;margin:10px 0 0}
+.option-list{display:grid;gap:10px}
+.option{display:flex;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);border-radius:14px;background:var(--paper);padding:14px 16px;color:var(--ink);cursor:pointer;font-weight:700;transition:.2s}
+.option:hover{border-color:var(--green);transform:translateY(-1px)}.option .letter{width:31px;height:31px;display:grid;place-items:center;background:#e7eddf;color:var(--green);border-radius:9px;flex:none}
+.option.correct{border-color:#57854a;background:#edf5e8}.option.wrong{border-color:#c46b3b;background:#fff0e5}
+.feedback{display:none;margin-top:12px;padding:14px 16px;background:#e7eddf;border-radius:13px;font-size:14px}.feedback.show{display:block}
+.quiz-progress{height:6px;background:#dfe4d8;border-radius:20px;overflow:hidden;margin:20px 0 0}.quiz-progress span{height:100%;display:block;background:var(--orange);width:0;transition:width .3s}
+.term-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}.term{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:13px 15px}.term b{display:block;color:var(--green);margin-bottom:3px}.term span{font-size:13px;color:var(--muted)}
+.curriculum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.unit-card{border-left:3px solid var(--orange);background:var(--paper);border-radius:0 14px 14px 0;padding:14px 16px}.unit-card small{color:var(--green);font-weight:900;letter-spacing:.08em;text-transform:uppercase}.unit-card b{display:block;margin:5px 0}.unit-card p{font-size:13px;color:var(--muted);margin:0}
+.source-list{display:grid;gap:10px;margin-top:18px}.source{display:flex;align-items:center;gap:12px;padding:13px 16px;border:1px solid #ffffff28;border-radius:13px;color:#f5f2e9;text-decoration:none;background:#ffffff08}.source:hover{background:#ffffff16}.source .sicon{font-size:22px}.source small{display:block;color:#c5d2c7}
+.footer-line{display:flex;align-items:center;gap:12px;margin-top:28px;color:var(--muted);font-size:12px}
+.deckbar{display:flex;align-items:center;gap:14px;padding:10px 20px;background:#102a24;color:#f5f2e9;z-index:20;min-height:62px}
+.brand{font-weight:900;font-size:12px;letter-spacing:.08em;white-space:nowrap}.brand span{color:var(--lime)}
+.progress-track{height:4px;background:#ffffff2b;border-radius:20px;flex:1;overflow:hidden}.progress-track span{height:100%;display:block;width:0;background:var(--lime);transition:width .3s}
+.page-count{font-variant-numeric:tabular-nums;font-size:12px;color:#c5d2c7;white-space:nowrap;min-width:48px;text-align:center}
+.controls{display:flex;align-items:center;gap:7px}.ctrl{border:1px solid #ffffff35;background:#ffffff0b;color:#f5f2e9;border-radius:10px;padding:8px 12px;cursor:pointer;font-size:13px;font-weight:800}.ctrl:hover{background:#ffffff20}.ctrl.primary{background:var(--lime);color:var(--deep);border-color:var(--lime)}
+.dots{display:flex;gap:5px;align-items:center}.dot{width:6px;height:6px;padding:0;border:0;border-radius:9px;background:#ffffff50;cursor:pointer;transition:.2s}.dot.active{width:20px;background:var(--lime)}
+.hint{position:absolute;right:22px;top:18px;color:var(--muted);font-size:11px;letter-spacing:.04em;z-index:4;pointer-events:none}.dark .hint{color:#a9b9ad}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:210px}.hero-orbit{width:190px}.float-tag.one{left:10%}.float-tag.two{right:6%}.budget-layout{grid-template-columns:1fr}.curriculum{grid-template-columns:repeat(2,minmax(0,1fr))}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.term-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.slide{padding:28px 26px 30px}}
+@media(max-width:560px){.grid2,.grid3,.grid4,.curriculum,.term-grid{grid-template-columns:1fr}.slide{padding:25px 20px 28px}.deckbar{gap:8px;padding:9px 10px}.brand{font-size:10px}.dots{display:none}.ctrl{padding:8px 9px}.page-count{min-width:40px}.hint{display:none}.hero-art{min-height:180px}.money-panel{min-height:190px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
-<header class="topbar"><div class="wrap nav"><a class="logo" href="#home"><span class="logo-mark">₫</span><span>KINH TẾ <span style="color:#8a9d64">KHÔNG KHÔ</span></span></a><nav class="links" id="navlinks"><a href="#chu-de">Chủ đề</a><a href="#lo-trinh">Bài lớp 10</a><a href="#thu-thach">Thử thách</a><a href="#cong-cu">Ôn tập</a><a href="#tu-dien">Từ điển</a></nav><button class="menu" id="menuBtn" aria-expanded="false">☰ Menu</button></div></header>
-<main>
-<section class="hero" id="home"><div class="wrap hero-grid"><div class="reveal"><span class="eyebrow">Góc học tập · Kinh tế & đời sống</span><h1>Hiểu tiền.<br>Hiểu người.<br><em>Hiểu thế giới.</em></h1><p class="hero-copy">Kinh tế không chỉ nằm trong sách giáo khoa. Nó xuất hiện trong mỗi lần chúng ta mua sắm, tiết kiệm, lựa chọn nghề nghiệp hay quyết định sử dụng nguồn lực.</p><div class="actions"><a class="btn btn-primary" href="#chu-de">Khám phá chủ đề <span>↗</span></a><a class="btn btn-secondary" href="#thu-thach">Thử sức ngay</a></div></div><div class="hero-art reveal"><div class="orbit"></div><div class="note-card"><span class="small">Ghi chú số 01</span><h2>“Mỗi lựa chọn đều có một cái giá — và một cơ hội.”</h2><p>Học kinh tế là học cách cân nhắc điều quan trọng, không chỉ cách tính toán con số.</p><div class="note-bottom"><span>TƯ DUY KINH TẾ</span><span>01 / 04</span></div></div><div class="sticker"><div><span>✳</span>HỌC ĐỂ<br>ỨNG DỤNG</div></div></div></div></section>
-<div class="ticker"><div class="wrap ticker-inner"><span>✳ Lựa chọn thông minh</span><span>✳ Tư duy phản biện</span><span>✳ Tài chính cá nhân</span><span>✳ Công dân trách nhiệm</span></div></div>
-<section class="section" id="chu-de"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">Bản đồ kiến thức</span><h2>Học từ điều gần gũi nhất.</h2></div><p>Chọn một chủ đề để bắt đầu. Mỗi phần là một cánh cửa kết nối kiến thức trên lớp với những tình huống ngoài đời.</p></div><div class="cards">
-<article class="card reveal"><div class="card-icon">🧭</div><span class="tag">NỀN TẢNG</span><h3>Kinh tế và lựa chọn</h3><svg class="card-illustration" viewBox="0 0 320 104" role="img" aria-label="Minh họa lựa chọn giữa các phương án"><circle class="fill" cx="54" cy="52" r="27"/><path class="stroke" d="M54 38v16l11 7"/><path class="stroke" d="M95 27h62l13 13v37H95z"/><path class="stroke" d="M108 45h47M108 56h34M108 67h25"/><path class="paper" d="M204 22h68v60h-68z"/><path class="stroke" d="M218 43l9 9 17-20M218 66h39"/></svg><p>Kinh tế nghiên cứu cách con người sử dụng nguồn lực có hạn để đáp ứng nhu cầu. Vì không thể có mọi thứ cùng lúc, mỗi quyết định đều đi kèm sự đánh đổi.</p><div class="topic-detail"><strong>Ví dụ:</strong> Dùng buổi tối để học bài đồng nghĩa bạn có ít thời gian chơi game hơn. Hãy xác định điều quan trọng nhất trước khi chọn.</div><a class="open-label" href="#thu-thach">Thử tình huống <span>↗</span></a></article>
-<article class="card reveal"><div class="card-icon">🪙</div><span class="tag">ĐỜI SỐNG</span><h3>Quản lý tài chính cá nhân</h3><svg class="card-illustration" viewBox="0 0 320 104" role="img" aria-label="Minh họa kế hoạch chi tiêu cá nhân"><rect class="paper" x="38" y="16" width="88" height="72" rx="8"/><path class="stroke" d="M54 35h54M54 47h34M54 62h12M76 62h12M98 62h10"/><circle class="fill" cx="178" cy="53" r="29"/><path class="stroke" d="M178 35v19l14 8"/><path class="stroke" d="M229 75l17-17 12 9 24-30"/><path class="stroke" d="M265 37h17v17"/></svg><p>Ghi lại khoản tiền nhận được và khoản đã chi; phân biệt nhu cầu thiết yếu với mong muốn; đặt mục tiêu tiết kiệm cụ thể.</p><div class="topic-detail"><strong>Ví dụ:</strong> Có 100.000 đồng, hãy dự trù tiền đi lại trước, đặt khoản tiết kiệm rồi mới tính tiền ăn vặt.</div><a class="open-label" href="#cong-cu">Ôn tập nhanh <span>↗</span></a></article>
-<article class="card reveal"><div class="card-icon">🏪</div><span class="tag">THỊ TRƯỜNG</span><h3>Sản xuất và kinh doanh</h3><svg class="card-illustration" viewBox="0 0 320 104" role="img" aria-label="Minh họa cửa hàng và trao đổi hàng hóa"><path class="paper" d="M40 43h88v43H40z"/><path class="warm" d="M34 42l10-23h80l10 23z"/><path class="stroke" d="M34 42h100M52 44v42M76 44v42M100 44v42"/><circle class="fill" cx="204" cy="36" r="17"/><path class="stroke" d="M204 26v20M196 31h13a6 6 0 010 12h-13"/><path class="stroke" d="M174 75h91M190 65l-16 10 16 10M249 65l16 10-16 10"/></svg><p>Sản xuất tạo ra hàng hóa hoặc dịch vụ. Người bán cân nhắc chi phí và nhu cầu khách hàng; người mua so sánh giá, chất lượng và mức độ cần thiết.</p><div class="topic-detail"><strong>Ví dụ:</strong> Một quầy nước phải tính tiền nguyên liệu, cốc, công sức và giá bán để biết kinh doanh có hiệu quả hay không.</div><a class="open-label" href="#tu-dien">Tra thuật ngữ <span>↗</span></a></article>
-<article class="card reveal"><div class="card-icon">🤝</div><span class="tag">CỘNG ĐỒNG</span><h3>Đạo đức kinh doanh</h3><svg class="card-illustration" viewBox="0 0 320 104" role="img" aria-label="Minh họa hợp tác và sự tin cậy"><path class="paper" d="M42 32l24-13 32 17-22 24z"/><path class="paper" d="M278 32l-24-13-32 17 22 24z"/><path class="stroke" d="M87 47l25 20c5 4 10-2 6-6l-12-11 19 15c5 4 10-2 6-6l-16-15 18 12c5 3 9-3 5-7l-22-18"/><path class="stroke" d="M232 47l-25 20c-5 4-10-2-6-6l12-11-19 15c-5 4-10-2-6-6l16-15-18 12c-5 3-9-3-5-7l22-18"/><path class="fill" d="M141 28l19-10 19 10-19 12z"/><path class="stroke" d="M160 40v20"/></svg><p>Kinh doanh có trách nhiệm không chỉ nhằm tạo lợi nhuận mà còn cần trung thực về sản phẩm, tôn trọng khách hàng, người lao động và cộng đồng.</p><div class="topic-detail"><strong>Ví dụ:</strong> Cửa hàng thông báo đúng giá và thành phần sản phẩm, không quảng cáo sai sự thật.</div><a class="open-label" href="#tu-dien">Tra thuật ngữ <span>↗</span></a></article>
-<article class="card reveal"><div class="card-icon">🏛️</div><span class="tag">CÔNG DÂN</span><h3>Vai trò của Nhà nước</h3><svg class="card-illustration" viewBox="0 0 320 104" role="img" aria-label="Minh họa ngân sách công và dịch vụ cộng đồng"><path class="paper" d="M105 36h110v50H105z"/><path class="stroke" d="M92 36l68-23 68 23zM120 45v31M145 45v31M175 45v31M200 45v31M94 83h132"/><circle class="fill" cx="55" cy="32" r="15"/><path class="stroke" d="M55 23v18M48 28h10a5 5 0 010 10h-10"/><path class="stroke" d="M252 30h28v55h-28zM259 42h14M259 53h14M259 64h9"/></svg><p>Nhà nước xây dựng khuôn khổ pháp luật, thực hiện chính sách kinh tế và cung cấp các dịch vụ công. Ngân sách được dùng cho những nhiệm vụ công theo quy định.</p><div class="topic-detail"><strong>Ví dụ:</strong> Ngân sách có thể hỗ trợ trường học, bệnh viện, đường sá và các chương trình phục vụ cộng đồng.</div><a class="open-label" href="#lo-trinh">Xem bài học <span>↗</span></a></article>
-<article class="card reveal"><div class="card-icon">⚖️</div><span class="tag">LIÊN HỆ PHÁP LUẬT</span><h3>Quyền và trách nhiệm</h3><svg class="card-illustration" viewBox="0 0 320 104" role="img" aria-label="Minh họa pháp luật và sự công bằng"><path class="stroke" d="M160 18v66M124 30h72M135 30l-20 32h40zM185 30l-20 32h40zM133 84h54"/><path class="fill" d="M160 13l8 8-8 8-8-8z"/><path class="stroke" d="M104 64q11 12 22 0M174 64q11 12 22 0"/></svg><p>Pháp luật quy định các quyền, nghĩa vụ và cách xử lý hành vi vi phạm. Hiểu quy tắc giúp mỗi người bảo vệ quyền lợi hợp pháp và tôn trọng người khác.</p><div class="topic-detail"><strong>Ví dụ:</strong> Khi mua hàng, người tiêu dùng nên xem thông tin, giữ hóa đơn và phản ánh qua kênh phù hợp nếu quyền lợi bị ảnh hưởng.</div><a class="open-label" href="#lo-trinh">Xem bài học <span>↗</span></a></article>
-</div></div></section>
-
-<section class="section" id="lo-trinh">
-<div class="wrap">
-<div class="section-head reveal"><div><span class="eyebrow">Bám sát nội dung lớp 10</span><h2>Bản đồ bài học.</h2></div><p>Lộ trình tham khảo dựa trên mục lục SGK Giáo dục kinh tế và pháp luật 10 – bộ Kết nối tri thức với cuộc sống. Mỗi chủ đề bên dưới có một gợi ý để liên hệ thực tế; tên bài có thể khác giữa các bộ sách.</p></div>
-<div class="curriculum reveal">
-<div class="curriculum-intro"><div><strong>23 bài · 9 chủ đề</strong><p>Từ hoạt động kinh tế, thị trường và tài chính đến pháp luật, Hiến pháp và hệ thống chính trị. Mỗi chủ đề gồm những bài học chính và một gợi ý liên hệ đời sống để bạn dễ nhớ kiến thức.</p></div><a class="btn btn-primary" href="#nguon">Xem nguồn học liệu ↗</a></div>
-<div class="curriculum-groups">
-<article class="curriculum-group"><span class="unit">Chủ đề 01 · Kinh tế</span><h3>Nền kinh tế và các chủ thể</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Chuỗi hoạt động kinh tế"><path class="paper" d="M14 21h48v31H14zM96 21h48v31H96zM178 21h48v31h-48z"/><path class="stroke" d="M62 36h31m-8-7 8 7-8 7M144 36h31m-8-7 8 7-8 7"/><path class="stroke" d="M25 31h26M25 39h18M107 31h26M107 39h18M189 31h26M189 39h18"/></svg><ol><li>Các hoạt động kinh tế cơ bản trong đời sống xã hội</li><li>Các chủ thể của nền kinh tế</li></ol><p>Ghi nhớ: sản xuất, phân phối, trao đổi, tiêu dùng.</p><p>Trong đời sống: nguyên liệu được sản xuất, vận chuyển, bán tại cửa hàng rồi được người tiêu dùng sử dụng.</p></article>
-<article class="curriculum-group"><span class="unit">Chủ đề 02 · Thị trường</span><h3>Thị trường và cơ chế thị trường</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Người mua và người bán trên thị trường"><circle class="fill" cx="45" cy="25" r="11"/><path class="stroke" d="M27 57q2-20 18-20t18 20M177 25h35l-5 29h-25zM172 25h45M186 20l-5-10M201 20l5-10"/><path class="stroke" d="M76 35h82m-9-8 9 8-9 8"/></svg><ol><li>Thị trường</li><li>Cơ chế thị trường</li></ol><p>Liên hệ: vì sao giá cả và nhu cầu thay đổi?</p><p>Ví dụ: khi nhiều người cùng muốn mua một món hàng nhưng lượng hàng ít, giá có thể tăng; thực tế còn phụ thuộc nhiều yếu tố.</p></article>
-<article class="curriculum-group"><span class="unit">Chủ đề 03 · Nhà nước</span><h3>Ngân sách nhà nước và thuế</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Ngân sách công và thuế"><path class="paper" d="M77 29h86v32H77z"/><path class="stroke" d="M67 29l53-20 53 20zM91 36v20M120 36v20M149 36v20M74 61h92"/><circle class="fill" cx="42" cy="31" r="14"/><path class="stroke" d="M42 23v17M35 28h10a4 4 0 010 8h-10"/></svg><ol><li>Ngân sách nhà nước</li><li>Thuế</li></ol><p>Phân biệt nguồn thu và các khoản chi công.</p><p>Ví dụ: thuế là một nguồn thu công; ngân sách phân bổ cho nhiệm vụ công theo quy định và kế hoạch.</p></article>
-<article class="curriculum-group"><span class="unit">Chủ đề 04 · Kinh doanh</span><h3>Sản xuất kinh doanh</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Sản phẩm đi từ ý tưởng đến khách hàng"><path class="paper" d="M25 27h48v34H25z"/><path class="warm" d="M21 27l7-14h42l7 14z"/><path class="stroke" d="M82 43h54m-9-8 9 8-9 8"/><path class="paper" d="M151 24h55v37h-55z"/><path class="stroke" d="M161 34h35M161 43h26M161 52h19"/></svg><ol><li>Sản xuất kinh doanh và các mô hình sản xuất kinh doanh</li></ol><p>Nhận biết mục tiêu, nguồn lực và mô hình kinh doanh.</p><p>Ví dụ: người kinh doanh cần hiểu khách hàng, tính chi phí, đảm bảo chất lượng và tuân thủ quy định liên quan.</p></article>
-<article class="curriculum-group"><span class="unit">Chủ đề 05 · Tín dụng</span><h3>Tín dụng trong đời sống</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Vay và hoàn trả có kế hoạch"><rect class="paper" x="24" y="15" width="77" height="44" rx="5"/><path class="stroke" d="M35 28h53M35 38h28M35 48h19"/><path class="stroke" d="M123 27q30-22 55 0M168 18l10 9-11 7M177 46q-30 22-55 0M132 38l-10 8 11 7"/><circle class="fill" cx="210" cy="36" r="14"/></svg><ol><li>Tín dụng và vai trò của tín dụng</li><li>Dịch vụ tín dụng</li></ol><p>Luôn xem kỹ chi phí, điều kiện và nghĩa vụ trả nợ.</p><p>Trước khi sử dụng dịch vụ tín dụng, cần hiểu lãi, phí, thời hạn, nghĩa vụ thanh toán và rủi ro.</p></article>
-<article class="curriculum-group"><span class="unit">Chủ đề 06 · Cá nhân</span><h3>Kế hoạch tài chính cá nhân</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Mục tiêu tiết kiệm cá nhân"><rect class="paper" x="25" y="13" width="71" height="48" rx="5"/><path class="stroke" d="M38 26h43M38 36h27M38 46h15"/><circle class="fill" cx="153" cy="35" r="23"/><circle class="stroke" cx="153" cy="35" r="13"/><circle class="warm" cx="153" cy="35" r="5"/><path class="stroke" d="M171 17l18-9M185 8h4v5"/></svg><ol><li>Lập kế hoạch tài chính cá nhân</li></ol><p>Thực hành đặt mục tiêu, dự trù thu chi và tiết kiệm.</p><p>Mẫu đơn giản: mục tiêu → thu nhập dự kiến → khoản chi cần thiết → tiết kiệm → rà soát cuối tuần.</p></article>
-<article class="curriculum-group"><span class="unit">Chủ đề 07 · Pháp luật</span><h3>Pháp luật Việt Nam</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Quy tắc pháp luật"><path class="paper" d="M78 14h84v48H78z"/><path class="stroke" d="M92 26h56M92 36h56M92 46h38"/><path class="fill" d="M171 37l9 9 19-22"/><path class="stroke" d="M177 45l5 5 20-24"/></svg><ol><li>Khái niệm, đặc điểm và vai trò của pháp luật</li><li>Hệ thống pháp luật và văn bản pháp luật</li><li>Thực hiện pháp luật</li></ol><p>Phân biệt hiểu luật, tuân thủ và thực hiện quyền, nghĩa vụ.</p><p>Ví dụ: quy tắc giao thông đặt ra nghĩa vụ chung nhằm góp phần bảo vệ an toàn cho mọi người.</p></article>
-<article class="curriculum-group"><span class="unit">Chủ đề 08 · Hiến pháp</span><h3>Hiến pháp Việt Nam</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Hiến pháp và các quyền cơ bản"><path class="paper" d="M88 12h64v49H88z"/><path class="stroke" d="M101 24h38M101 33h38M101 42h29"/><path class="fill" d="M120 49l4 5 9-10"/><circle class="warm" cx="58" cy="35" r="13"/><circle class="fill" cx="181" cy="35" r="13"/><path class="stroke" d="M72 35h14m66 0h16"/></svg><ol><li>Khái niệm, đặc điểm, vị trí của Hiến pháp</li><li>Chế độ chính trị</li><li>Quyền con người, quyền và nghĩa vụ cơ bản của công dân</li><li>Kinh tế, văn hóa, xã hội, giáo dục, khoa học, công nghệ, môi trường</li></ol><p>Đây là nội dung khái quát để học tập, không thay thế tư vấn pháp lý.</p><p>Hiến pháp là luật cơ bản của Nhà nước; khi học từng nội dung, hãy đọc đúng điều khoản và tài liệu được giáo viên hướng dẫn.</p></article>
-<article class="curriculum-group"><span class="unit">Chủ đề 09 · Tổ chức nhà nước</span><h3>Hệ thống chính trị Việt Nam</h3><svg class="curriculum-art" viewBox="0 0 240 70" role="img" aria-label="Các cơ quan trong hệ thống nhà nước"><path class="paper" d="M78 29h84v32H78z"/><path class="stroke" d="M69 29l51-20 51 20zM92 36v19M120 36v19M148 36v19M75 61h90"/><circle class="fill" cx="41" cy="22" r="9"/><circle class="warm" cx="199" cy="22" r="9"/><path class="stroke" d="M41 31v15m-9-7h18M199 31v15m-9-7h18"/></svg><ol><li>Đặc điểm, cấu trúc và nguyên tắc hoạt động</li><li>Quốc hội, Chủ tịch nước, Chính phủ</li><li>Tòa án nhân dân và Viện kiểm sát nhân dân</li><li>Hội đồng nhân dân và Ủy ban nhân dân</li></ol><p>Ôn chức năng, nhiệm vụ theo đúng nội dung sách đang học.</p><p>Hãy học theo sơ đồ: cơ quan nào, chức năng chính gì, phối hợp với cơ quan nào; tránh học thuộc tên mà không hiểu vai trò.</p></article>
-</div></div>
-</div>
+<div class="deck" id="deck">
+<main class="stage" id="stage" aria-label="Các trang trình chiếu">
+<section class="slide dark active" data-title="Mở đầu">
+ <div class="hero-grid">
+  <div><div class="kicker">Bài thuyết trình · Giáo dục kinh tế & pháp luật 10</div><h1>Hiểu tiền.<br>Hiểu người.<br><em>Hiểu thế giới.</em></h1><p class="lead">KINH TẾ KHÔNG KHÔ — Học kinh tế từ những điều gần gũi nhất trong cuộc sống.</p><span class="pill">TƯ DUY KINH TẾ</span><span class="pill">ĐỜI SỐNG</span><span class="pill">CÔNG DÂN</span></div>
+  <div class="hero-art"><div class="hero-orbit"><div class="coin">₫</div><span class="float-tag one">Lựa chọn</span><span class="float-tag two">Giá trị</span><span class="float-tag three">Cơ hội</span></div></div>
+ </div><div class="footer-line">MỘT GÓC NHÌN MỚI VỀ KINH TẾ <span>✳</span> LỚP 10</div>
 </section>
-<section class="section" id="nguon" style="padding-top:0">
-<div class="wrap">
-<div class="section-head reveal"><div><span class="eyebrow">Đọc thêm có chọn lọc</span><h2>Nguồn để học chắc.</h2></div><p>Ưu tiên chương trình và học liệu từ cơ quan giáo dục, nhà xuất bản; dùng trang tổng hợp để đối chiếu mục lục, không thay thế sách giáo khoa của lớp bạn.</p></div>
-<div class="source-list reveal">
-<a class="source-link" href="https://moet.gov.vn/content/vanban/Lists/VBDT/Attachments/1582/5-mon-gd-ktpl-gdtx-thpt-sua-ngay-25-2-2022-1.pdf" target="_blank" rel="noopener noreferrer"><span>📘</span><span><b>Bộ GD&ĐT — Tài liệu chương trình môn học</b><small>Tài liệu hướng dẫn giáo dục kinh tế và pháp luật · mở PDF ↗</small></span></a>
-<a class="source-link" href="https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/sgv-giao-duc-kinh-te-va-phap-luat-10.4496086323" target="_blank" rel="noopener noreferrer"><span>📚</span><span><b>NXB Giáo dục Việt Nam — Mục lục SGV lớp 10</b><small>Đối chiếu các chủ đề và bài học của bộ sách Kết nối tri thức ↗</small></span></a>
-<a class="source-link" href="https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/11/9/sgk-giao-duc-kinh-te-phap-luat-lop-10-kntt-1762705900872699557622.pdf" target="_blank" rel="noopener noreferrer"><span>🗂️</span><span><b>SGK Giáo dục kinh tế và pháp luật 10</b><small>Tệp PDF tham khảo bộ Kết nối tri thức; hãy ưu tiên bản sách hợp lệ do trường cung cấp ↗</small></span></a>
-<a class="source-link" href="https://vbpl.moj.gov.vn/bogiaoducdaotao/Pages/vbpq-toanvan.aspx?ItemID=146721" target="_blank" rel="noopener noreferrer"><span>⚖️</span><span><b>Cơ sở dữ liệu văn bản pháp luật</b><small>Thông tư 32/2018/TT-BGDĐT và tình trạng văn bản ↗</small></span></a>
-</div>
-<p style="font-size:12px;color:var(--muted);margin-top:14px">Lưu ý: nội dung trang là tài liệu học tập bổ trợ, tóm lược bằng lời riêng; quy định pháp luật có thể được sửa đổi. Khi cần thông tin hiện hành, hãy kiểm tra văn bản chính thức và hướng dẫn của giáo viên.</p>
-</div>
+<section class="slide" data-title="Kinh tế quanh ta">
+ <div class="kicker">01 · Khởi động</div><h2>Kinh tế có ở khắp mọi nơi.</h2><p class="lead">Kinh tế không chỉ là tiền bạc hay những con số. Đó là cách chúng ta lựa chọn và sử dụng nguồn lực mỗi ngày.</p>
+ <div class="grid3">
+  <article class="card"><span class="icon">🛍️</span><h3>Mua sắm</h3><p>So sánh giá cả, chất lượng và nhu cầu trước khi quyết định.</p></article>
+  <article class="card"><span class="icon">🐷</span><h3>Tiết kiệm</h3><p>Phân chia tiền tiêu vặt và đặt mục tiêu cho tương lai.</p></article>
+  <article class="card"><span class="icon">🏪</span><h3>Kinh doanh</h3><p>Cửa hàng tính chi phí, định giá và phục vụ khách hàng.</p></article>
+ </div>
+ <p class="quote" style="margin-top:28px"><span class="quote-mark">“</span> Mỗi ngày, chúng ta đều đưa ra những quyết định kinh tế.</p>
 </section>
-
-<section class="section split" id="thu-thach"><div class="wrap split-grid"><div class="reveal"><span class="eyebrow">Tình huống thực tế</span><h2>Một quyết định nhỏ. Một bài học lớn.</h2><p>Giả sử bạn có 100.000 đồng để dùng trong tuần. Bạn muốn mua đồ ăn vặt, nhưng cũng cần tiền đi lại và muốn dành dụm một phần.</p><p>Không có một đáp án duy nhất cho mọi người. Điều quan trọng là bạn hiểu ưu tiên, cân nhắc hệ quả và giải thích được lựa chọn của mình.</p><span class="tag">KỸ NĂNG: LẬP NGÂN SÁCH</span></div><div class="example reveal"><div class="example-top"><div><span class="case-label">Thử thách 01</span><h3>Bạn sẽ chọn phương án nào?</h3></div><span style="font-size:27px">💡</span></div><p style="font-size:14px;color:var(--muted)">Chọn phương án phù hợp nhất với mục tiêu giả định: vẫn đủ tiền đi lại và tiết kiệm được một khoản.</p><div class="choice-list" id="choices"><button class="choice" data-correct="false"><span class="letter">A</span><span>Dùng gần hết tiền để mua món đồ đang thích, phần còn lại tính sau.</span></button><button class="choice" data-correct="true"><span class="letter">B</span><span>Trừ tiền đi lại trước, đặt mục tiêu tiết kiệm rồi mới cân nhắc khoản vui chơi.</span></button><button class="choice" data-correct="false"><span class="letter">C</span><span>Chi tiêu tùy hứng mỗi ngày, không cần ghi lại vì số tiền không lớn.</span></button></div><div class="feedback" id="feedback" aria-live="polite"></div></div></div></section>
-<section class="section" id="cong-cu"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">Bộ công cụ ôn tập</span><h2>Nhớ nhanh, hiểu sâu.</h2></div><p>Ôn lại khái niệm cốt lõi bằng thẻ ghi nhớ và câu hỏi nhanh. Nội dung mang tính nhập môn, hãy đối chiếu với bài học trên lớp.</p></div><div class="tools-grid"><div class="tool reveal"><span class="eyebrow" style="color:var(--lime)">01 · FLASHCARD</span><h3>Thẻ ghi nhớ</h3><p>Nhấn vào thẻ để xem định nghĩa. Tự thử nhớ trước khi lật nhé.</p><div class="flashcard" id="flashcard" role="button" tabindex="0" aria-label="Lật thẻ ghi nhớ"><div><div id="flashTerm">Chi phí cơ hội là gì?</div><small id="flashHint">Nhấn để lật thẻ</small></div></div><div class="quiz-controls"><button id="prevFlash">← Trước</button><button id="nextFlash">Tiếp →</button></div><div class="progress"><span id="flashProgress"></span></div></div><div class="tool reveal"><span class="eyebrow" style="color:#8d4e2b">02 · KIỂM TRA NHANH</span><h3>Đúng hay chưa đúng?</h3><p>Kiểm tra một kiến thức ngắn và xem giải thích ngay.</p><div class="flashcard" style="cursor:default"><div><div id="quizQuestion">Ngân sách giúp chúng ta theo dõi thu nhập và chi tiêu.</div><small id="quizCount">Câu 1 / 4</small></div></div><div class="quiz-controls"><button id="quizTrue">Đúng ✓</button><button id="quizFalse">Sai ✕</button><button id="quizNext">Câu tiếp →</button></div><div id="quizFeedback" style="font-size:13px;margin-top:12px;min-height:38px" aria-live="polite">Chọn Đúng hoặc Sai để xem giải thích.</div><div class="progress"><span id="quizProgress" style="width:25%"></span></div></div></div></div></section>
-<section class="section" id="tu-dien" style="padding-top:10px"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">Từ điển mini</span><h2>Gỡ rối thuật ngữ.</h2></div><p>Tìm nhanh một số khái niệm thường gặp trong các bài học kinh tế. Diễn giải được viết ngắn gọn để dễ ghi nhớ.</p></div><div class="glossary reveal"><div class="searchbar"><span style="font-size:20px">⌕</span><input id="termSearch" type="search" placeholder="Tìm: cung, cầu, ngân sách..." aria-label="Tìm thuật ngữ"></div><div class="terms" id="terms">
-<div class="term" data-key="chi phí cơ hội lựa chọn đánh đổi"><strong>Chi phí cơ hội</strong><span>Giá trị của phương án tốt nhất bị bỏ qua khi ta lựa chọn một phương án khác.</span></div>
-<div class="term" data-key="cung thị trường người bán"><strong>Cung</strong><span>Lượng hàng hóa hoặc dịch vụ người bán sẵn sàng và có khả năng đưa ra thị trường ở các mức giá khác nhau.</span></div>
-<div class="term" data-key="cầu thị trường người mua"><strong>Cầu</strong><span>Lượng hàng hóa hoặc dịch vụ người mua sẵn sàng và có khả năng mua ở các mức giá khác nhau.</span></div>
-<div class="term" data-key="ngân sách thu chi kế hoạch"><strong>Ngân sách</strong><span>Kế hoạch dự kiến các khoản thu và chi trong một khoảng thời gian nhất định.</span></div>
-<div class="term" data-key="tiết kiệm tài chính dành dụm"><strong>Tiết kiệm</strong><span>Phần thu nhập chưa sử dụng cho tiêu dùng hiện tại, được dành lại cho mục tiêu sau này.</span></div>
-<div class="term" data-key="lợi nhuận kinh doanh doanh thu chi phí"><strong>Lợi nhuận</strong><span>Phần chênh lệch giữa doanh thu và tổng chi phí trong một kỳ, khi doanh thu lớn hơn chi phí.</span></div>
-<div class="term" data-key="thuế nhà nước ngân sách"><strong>Thuế</strong><span>Khoản nộp bắt buộc theo quy định pháp luật, là một nguồn thu của ngân sách nhà nước.</span></div>
-<div class="term" data-key="đạo đức kinh doanh trách nhiệm trung thực"><strong>Đạo đức kinh doanh</strong><span>Những nguyên tắc, chuẩn mực định hướng hành vi trung thực và có trách nhiệm trong kinh doanh.</span></div>
-</div>
-<div class="term" data-key="khan hiếm nguồn lực hữu hạn nhu cầu"><strong>Khan hiếm</strong><span>Tình trạng nguồn lực có hạn trong khi nhu cầu của con người rất đa dạng, khiến chúng ta phải lựa chọn cách sử dụng nguồn lực.</span></div>
-<div class="term" data-key="hàng hóa dịch vụ sản phẩm"><strong>Hàng hóa và dịch vụ</strong><span>Hàng hóa là sản phẩm hữu hình có thể đáp ứng nhu cầu; dịch vụ là hoạt động mang lại lợi ích hoặc đáp ứng nhu cầu của người sử dụng.</span></div>
-<div class="term" data-key="thị trường mua bán người mua người bán"><strong>Thị trường</strong><span>Nơi hoặc hệ thống diễn ra sự trao đổi hàng hóa, dịch vụ giữa người mua và người bán.</span></div>
-<div class="term" data-key="giá cả giá tiền hàng hóa dịch vụ"><strong>Giá cả</strong><span>Số tiền được biểu thị để đổi lấy một hàng hóa hoặc dịch vụ.</span></div>
-<div class="term" data-key="doanh thu bán hàng kinh doanh"><strong>Doanh thu</strong><span>Tổng số tiền thu được từ việc bán hàng hóa hoặc cung cấp dịch vụ trong một khoảng thời gian, trước khi trừ chi phí.</span></div>
-<div class="term" data-key="chi phí kinh doanh sản xuất"><strong>Chi phí</strong><span>Giá trị các nguồn lực được sử dụng để sản xuất, kinh doanh hoặc thực hiện một hoạt động.</span></div>
-<div class="term" data-key="tiêu dùng người tiêu dùng mua sắm"><strong>Tiêu dùng</strong><span>Việc sử dụng hàng hóa và dịch vụ để đáp ứng nhu cầu của cá nhân hoặc hộ gia đình.</span></div>
-<div class="term" data-key="đầu tư vốn tương lai tài sản"><strong>Đầu tư</strong><span>Sử dụng tiền hoặc nguồn lực hiện tại với kỳ vọng tạo ra lợi ích trong tương lai, đồng thời có thể đi kèm rủi ro.</span></div>
-<div class="term" data-key="lạm phát mức giá chung tăng"><strong>Lạm phát</strong><span>Tình trạng mức giá chung của hàng hóa và dịch vụ tăng lên liên tục theo thời gian, làm giảm sức mua của tiền.</span></div>
-<div class="term" data-key="cạnh tranh doanh nghiệp thị trường"><strong>Cạnh tranh</strong><span>Sự ganh đua giữa các chủ thể kinh tế để thu hút khách hàng, nguồn lực hoặc đạt được lợi thế trên thị trường.</span></div>
-<div class="term" data-key="ngân sách nhà nước thu chi nhà nước"><strong>Ngân sách nhà nước</strong><span>Kế hoạch các khoản thu, chi của Nhà nước trong một thời kỳ, được lập và thực hiện theo quy định pháp luật.</span></div>
-<div class="term" data-key="tín dụng vay vốn trả nợ"><strong>Tín dụng</strong><span>Quan hệ cho phép một bên sử dụng vốn hoặc tài sản của bên khác trong thời hạn nhất định và có nghĩa vụ hoàn trả theo thỏa thuận.</span></div>
-<div class="term" data-key="lãi suất vay gửi tiền phần trăm"><strong>Lãi suất</strong><span>Tỷ lệ phần trăm dùng để tính tiền lãi trên số tiền gốc trong một khoảng thời gian.</span></div>
-<div class="term" data-key="năng suất hiệu quả sản xuất"><strong>Năng suất</strong><span>Mức sản phẩm hoặc kết quả tạo ra so với lượng nguồn lực được sử dụng trong cùng một khoảng thời gian.</span></div>
-<div class="empty" id="emptyMsg">Chưa tìm thấy thuật ngữ phù hợp. Thử từ khóa khác nhé.</div></div></div></section>
+<section class="slide green" data-title="Nguồn lực và lựa chọn">
+ <div class="kicker">02 · Nền tảng kinh tế</div><h2>Nhu cầu đa dạng.<br>Nguồn lực có hạn.</h2><p class="lead">Vì không thể có tất cả mọi thứ cùng lúc, con người phải lựa chọn và chấp nhận sự đánh đổi.</p>
+ <div class="grid3">
+  <article class="card"><div class="big-number">01</div><h3>Xác định ưu tiên</h3><p>Điều gì thực sự cần thiết và quan trọng nhất?</p></article>
+  <article class="card"><div class="big-number">02</div><h3>So sánh phương án</h3><p>Mỗi lựa chọn đem lại lợi ích và giới hạn nào?</p></article>
+  <article class="card"><div class="big-number">03</div><h3>Cân nhắc hệ quả</h3><p>Ta phải từ bỏ điều gì khi chọn một phương án?</p></article>
+ </div>
+ <div class="flow"><span>Nhu cầu</span><b>→</b><span>Lựa chọn</span><b>→</b><span>Đánh đổi</span><b>→</b><span>Kết quả</span></div>
+</section>
+<section class="slide" data-title="Chi phí cơ hội">
+ <div class="kicker">03 · Khái niệm quan trọng</div><h2>Chi phí cơ hội là gì?</h2><p class="lead">Là giá trị của phương án tốt nhất bị bỏ qua khi ta lựa chọn một phương án khác.</p>
+ <div class="grid2">
+  <article class="card"><span class="icon">🎮</span><h3>Chọn chơi game</h3><p>Bạn dành buổi tối để chơi game thay vì học bài. Cơ hội học tập đã bị giảm đi.</p></article>
+  <article class="card"><span class="icon">📚</span><h3>Chọn học bài</h3><p>Bạn dành thời gian ôn tập, đổi lại có ít thời gian giải trí hơn.</p></article>
+ </div>
+ <p class="quote" style="margin-top:25px">Điều quan trọng không chỉ là ta chọn gì, mà còn là ta đã bỏ qua điều gì.</p>
+</section>
+<section class="slide dark" data-title="Bốn hoạt động kinh tế">
+ <div class="kicker">04 · Bức tranh tổng quan</div><h2>Bốn hoạt động cơ bản của nền kinh tế.</h2><p class="lead">Các hoạt động liên kết với nhau, tạo nên quá trình vận hành của đời sống kinh tế.</p>
+ <div class="grid4">
+  <article class="card"><span class="icon">🏭</span><h3>Sản xuất</h3><p>Tạo ra hàng hóa và dịch vụ.</p></article>
+  <article class="card"><span class="icon">📦</span><h3>Phân phối</h3><p>Phân chia kết quả và nguồn lực.</p></article>
+  <article class="card"><span class="icon">🤝</span><h3>Trao đổi</h3><p>Mua bán, chuyển giao hàng hóa.</p></article>
+  <article class="card"><span class="icon">🧑‍🤝‍🧑</span><h3>Tiêu dùng</h3><p>Sử dụng hàng hóa, dịch vụ.</p></article>
+ </div>
+ <div class="flow"><span>Sản xuất</span><b>→</b><span>Phân phối</span><b>→</b><span>Trao đổi</span><b>→</b><span>Tiêu dùng</span></div>
+</section>
+<section class="slide" data-title="Thị trường">
+ <div class="kicker">05 · Thị trường</div><h2>Người mua và người bán gặp nhau.</h2><p class="lead">Thị trường là nơi diễn ra các quan hệ mua bán, trao đổi hàng hóa và dịch vụ. Giá cả có thể thay đổi theo cung, cầu và nhiều yếu tố khác.</p>
+ <div class="grid2">
+  <article class="card"><span class="icon">🧺</span><h3>Cung</h3><p>Lượng hàng hóa, dịch vụ mà người bán sẵn sàng cung cấp ở những mức giá nhất định.</p></article>
+  <article class="card"><span class="icon">🛒</span><h3>Cầu</h3><p>Nhu cầu có khả năng thanh toán của người mua đối với hàng hóa, dịch vụ.</p></article>
+ </div>
+ <div class="card" style="margin-top:14px"><b>Ví dụ:</b> Khi nhiều người muốn mua một món hàng nhưng lượng hàng ít, giá có thể tăng. Tuy nhiên, giá thực tế còn phụ thuộc nhiều yếu tố.</div>
+</section>
+<section class="slide green" data-title="Tài chính cá nhân">
+ <div class="kicker">06 · Đời sống</div><h2>Quản lý tài chính cá nhân.</h2><p class="lead">Biết tiền đến từ đâu, được dùng vào việc gì và còn lại bao nhiêu giúp chúng ta chủ động hơn.</p>
+ <div class="grid4">
+  <article class="card"><div class="big-number">01</div><h3>Ghi chép</h3><p>Theo dõi thu nhập và chi tiêu.</p></article>
+  <article class="card"><div class="big-number">02</div><h3>Ưu tiên</h3><p>Đáp ứng khoản thiết yếu trước.</p></article>
+  <article class="card"><div class="big-number">03</div><h3>Tiết kiệm</h3><p>Đặt mục tiêu phù hợp.</p></article>
+  <article class="card"><div class="big-number">04</div><h3>Điều chỉnh</h3><p>Rà soát và thay đổi kế hoạch.</p></article>
+ </div>
+ <div class="flow"><span>Mục tiêu</span><b>→</b><span>Dự trù thu chi</span><b>→</b><span>Tiết kiệm</span><b>→</b><span>Rà soát</span></div>
+</section>
+<section class="slide" data-title="Thử thách ngân sách">
+ <div class="kicker">07 · Tương tác cùng cả lớp</div><h2>Bạn có 100.000 đồng cho cả tuần.</h2><p class="lead">Bạn cần tiền đi lại, muốn tiết kiệm và cũng muốn mua món ăn vặt yêu thích. Phương án nào hợp lý nhất?</p>
+ <div class="budget-layout">
+  <div class="money-panel"><div><span class="small">NGÂN SÁCH CỦA BẠN</span><div class="amount">100.000đ</div></div><p>Hãy ưu tiên khoản cần thiết, sau đó mới cân nhắc mong muốn.</p></div>
+  <div><div class="option-list" id="budgetOptions">
+   <button class="option" data-correct="false"><span class="letter">A</span><span>Dùng gần hết tiền để mua món đồ đang thích, phần còn lại tính sau.</span></button>
+   <button class="option" data-correct="true"><span class="letter">B</span><span>Trừ tiền đi lại trước, đặt mục tiêu tiết kiệm rồi mới cân nhắc khoản vui chơi.</span></button>
+   <button class="option" data-correct="false"><span class="letter">C</span><span>Chi tiêu tùy hứng mỗi ngày, không cần ghi lại vì số tiền không lớn.</span></button>
+  </div><div class="feedback" id="budgetFeedback" aria-live="polite"></div></div>
+ </div>
+ <p class="small" style="margin-top:14px">Không có một cách chia tiền duy nhất cho tất cả mọi người. Điều quan trọng là giải thích được lựa chọn và kiểm tra xem kế hoạch có đáp ứng khoản cần thiết không.</p>
+</section>
+<section class="slide dark" data-title="Sản xuất và kinh doanh">
+ <div class="kicker">08 · Hoạt động kinh doanh</div><h2>Từ nhu cầu đến giá trị.</h2><p class="lead">Doanh nghiệp sử dụng nguồn lực để tạo ra hàng hóa hoặc dịch vụ đáp ứng nhu cầu của khách hàng.</p>
+ <div class="grid3">
+  <article class="card"><span class="icon">🔎</span><h3>Hiểu khách hàng</h3><p>Tìm hiểu nhu cầu, mong muốn và khả năng chi trả.</p></article>
+  <article class="card"><span class="icon">🧮</span><h3>Tính toán</h3><p>Xác định chi phí, giá bán và doanh thu dự kiến.</p></article>
+  <article class="card"><span class="icon">⭐</span><h3>Tạo uy tín</h3><p>Chú trọng chất lượng và trải nghiệm khách hàng.</p></article>
+ </div>
+ <div class="flow"><span>Nhu cầu</span><b>→</b><span>Sản phẩm</span><b>→</b><span>Khách hàng</span><b>→</b><span>Giá trị</span></div>
+</section>
+<section class="slide green" data-title="Doanh thu và lợi nhuận">
+ <div class="kicker">09 · Thử thách tính nhanh</div><h2>Quầy nước hôm nay lời bao nhiêu?</h2><p class="lead">Một quầy nước bán được 10 ly, mỗi ly 10.000 đồng. Tổng chi phí nguyên liệu và cốc là 60.000 đồng.</p>
+ <div class="grid2">
+  <article class="card"><span class="small">DOANH THU</span><div class="big-number">100.000đ</div><p>10 ly × 10.000 đồng</p></article>
+  <article class="card"><span class="small">TỔNG CHI PHÍ</span><div class="big-number">60.000đ</div><p>Nguyên liệu và cốc</p></article>
+ </div>
+ <h3 style="margin-top:24px">Lợi nhuận bằng bao nhiêu?</h3>
+ <div class="option-list" id="profitOptions" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+  <button class="option" data-correct="false"><span class="letter">A</span><span>100.000đ</span></button>
+  <button class="option" data-correct="true"><span class="letter">B</span><span>40.000đ</span></button>
+  <button class="option" data-correct="false"><span class="letter">C</span><span>60.000đ</span></button>
+ </div><div class="feedback" id="profitFeedback" aria-live="polite"></div>
+ <p class="small" style="margin-top:12px">Công thức: Lợi nhuận = Doanh thu − Tổng chi phí.</p>
+</section>
+<section class="slide" data-title="Đạo đức kinh doanh">
+ <div class="kicker">10 · Trách nhiệm</div><h2>Kinh doanh không chỉ là lợi nhuận.</h2><p class="lead">Một hoạt động kinh doanh bền vững cần tạo giá trị và có trách nhiệm với khách hàng, người lao động và cộng đồng.</p>
+ <div class="grid2">
+  <article class="card"><span class="icon">✓</span><h3>Trung thực</h3><p>Thông tin đúng về sản phẩm, nguồn gốc và chất lượng.</p></article>
+  <article class="card"><span class="icon">🏷️</span><h3>Minh bạch</h3><p>Niêm yết giá rõ ràng, không quảng cáo sai sự thật.</p></article>
+  <article class="card"><span class="icon">🤝</span><h3>Tôn trọng</h3><p>Đối xử công bằng với khách hàng và người lao động.</p></article>
+  <article class="card"><span class="icon">🌱</span><h3>Bền vững</h3><p>Cân nhắc tác động đến cộng đồng và môi trường.</p></article>
+ </div>
+</section>
+<section class="slide dark" data-title="Nhà nước và pháp luật">
+ <div class="kicker">11 · Công dân và cộng đồng</div><h2>Nhà nước, ngân sách và pháp luật.</h2><p class="lead">Nhà nước xây dựng khuôn khổ pháp luật, thực hiện chính sách và cung cấp các dịch vụ công phục vụ xã hội.</p>
+ <div class="grid3">
+  <article class="card"><span class="icon">🏛️</span><h3>Ngân sách</h3><p>Kế hoạch các khoản thu, chi của Nhà nước trong một thời kỳ.</p></article>
+  <article class="card"><span class="icon">₫</span><h3>Thuế</h3><p>Một nguồn thu quan trọng của ngân sách nhà nước.</p></article>
+  <article class="card"><span class="icon">⚖️</span><h3>Pháp luật</h3><p>Quy tắc chung giúp điều chỉnh hành vi và bảo vệ trật tự xã hội.</p></article>
+ </div>
+ <p class="quote" style="margin-top:25px">Quyền đi cùng trách nhiệm. Hiểu luật để biết quyền, thực hiện nghĩa vụ và tôn trọng người khác.</p>
+</section>
+<section class="slide" data-title="Bản đồ kiến thức lớp 10">
+ <div class="kicker">12 · Bám sát chương trình lớp 10</div><h2>Bản đồ 9 chủ đề kiến thức.</h2><p class="lead">Lộ trình tham khảo theo SGK Giáo dục kinh tế và pháp luật 10 — bộ Kết nối tri thức với cuộc sống.</p>
+ <div class="curriculum">
+  <div class="unit-card"><small>01 · Kinh tế</small><b>Nền kinh tế và các chủ thể</b><p>Hoạt động kinh tế cơ bản; các chủ thể.</p></div>
+  <div class="unit-card"><small>02 · Thị trường</small><b>Thị trường và cơ chế thị trường</b><p>Thị trường; cơ chế thị trường.</p></div>
+  <div class="unit-card"><small>03 · Nhà nước</small><b>Ngân sách nhà nước và thuế</b><p>Nguồn thu, khoản chi công và thuế.</p></div>
+  <div class="unit-card"><small>04 · Kinh doanh</small><b>Sản xuất kinh doanh</b><p>Mục tiêu, nguồn lực và mô hình.</p></div>
+  <div class="unit-card"><small>05 · Tín dụng</small><b>Tín dụng trong đời sống</b><p>Vai trò và dịch vụ tín dụng.</p></div>
+  <div class="unit-card"><small>06 · Cá nhân</small><b>Kế hoạch tài chính cá nhân</b><p>Mục tiêu, dự trù thu chi, tiết kiệm.</p></div>
+  <div class="unit-card"><small>07 · Pháp luật</small><b>Pháp luật Việt Nam</b><p>Đặc điểm, hệ thống và thực hiện pháp luật.</p></div>
+  <div class="unit-card"><small>08 · Hiến pháp</small><b>Hiến pháp Việt Nam</b><p>Vị trí, quyền và nghĩa vụ cơ bản.</p></div>
+  <div class="unit-card"><small>09 · Tổ chức nhà nước</small><b>Hệ thống chính trị Việt Nam</b><p>Cấu trúc, nguyên tắc và cơ quan.</p></div>
+ </div>
+</section>
+<section class="slide green" data-title="Thuật ngữ cần nhớ">
+ <div class="kicker">13 · Từ điển nhanh</div><h2>Những thuật ngữ cần nhớ.</h2><p class="lead">Một số khái niệm nền tảng giúp bạn hiểu và vận dụng kiến thức kinh tế.</p>
+ <div class="term-grid">
+  <div class="term"><b>Khan hiếm</b><span>Nguồn lực có hạn so với nhu cầu.</span></div>
+  <div class="term"><b>Chi phí cơ hội</b><span>Giá trị phương án tốt nhất bị bỏ qua.</span></div>
+  <div class="term"><b>Cung</b><span>Phía người bán trên thị trường.</span></div>
+  <div class="term"><b>Cầu</b><span>Nhu cầu có khả năng thanh toán.</span></div>
+  <div class="term"><b>Ngân sách</b><span>Kế hoạch dự kiến thu và chi.</span></div>
+  <div class="term"><b>Tiết kiệm</b><span>Phần thu nhập chưa sử dụng cho tiêu dùng.</span></div>
+  <div class="term"><b>Doanh thu</b><span>Tiền thu từ hoạt động bán hàng, cung cấp dịch vụ.</span></div>
+  <div class="term"><b>Lợi nhuận</b><span>Doanh thu sau khi trừ tổng chi phí.</span></div>
+  <div class="term"><b>Lạm phát</b><span>Mức giá chung tăng liên tục theo thời gian.</span></div>
+  <div class="term"><b>Cạnh tranh</b><span>Sự ganh đua để đạt lợi thế trên thị trường.</span></div>
+  <div class="term"><b>Tín dụng</b><span>Quan hệ sử dụng vốn có nghĩa vụ hoàn trả.</span></div>
+  <div class="term"><b>Lãi suất</b><span>Tỷ lệ dùng để tính tiền lãi theo thời gian.</span></div>
+ </div>
+</section>
+<section class="slide" data-title="Ôn tập">
+ <div class="kicker">14 · Kiểm tra nhanh</div><h2>Thử xem bạn nhớ được bao nhiêu.</h2><p class="lead">Đúng hay sai? Hãy chọn câu trả lời rồi xem giải thích.</p>
+ <div class="card" style="max-width:850px">
+  <div class="small" id="quizCount">CÂU 1 / 4</div><h3 id="quizQuestion" style="font-size:clamp(22px,3vw,34px);margin:16px 0 22px">Ngân sách giúp theo dõi thu nhập và chi tiêu.</h3>
+  <div class="grid2" style="margin-top:0"><button class="option" id="quizTrue"><span class="letter">✓</span><span>Đúng</span></button><button class="option" id="quizFalse"><span class="letter">✕</span><span>Sai</span></button></div>
+  <div class="feedback show" id="quizFeedback" aria-live="polite">Chọn Đúng hoặc Sai để xem giải thích.</div>
+  <div class="quiz-progress"><span id="quizProgress"></span></div>
+  <div style="display:flex;justify-content:flex-end;margin-top:15px"><button class="ctrl primary" id="quizNext" style="background:var(--green);color:white;border-color:var(--green)">Câu tiếp theo →</button></div>
+ </div>
+</section>
+<section class="slide dark" data-title="Nguồn học liệu">
+ <div class="kicker">15 · Tìm hiểu thêm</div><h2>Học chắc từ nguồn đáng tin cậy.</h2><p class="lead">Trang trình bày là tài liệu bổ trợ, tóm lược bằng lời riêng. Khi học và tra cứu, hãy ưu tiên sách giáo khoa, hướng dẫn của giáo viên và nguồn chính thức.</p>
+ <div class="source-list">
+  <a class="source" href="https://moet.gov.vn/content/vanban/Lists/VBDT/Attachments/1582/5-mon-gd-ktpl-gdtx-thpt-sua-ngay-25-2-2022-1.pdf" target="_blank" rel="noopener noreferrer"><span class="sicon">📘</span><span><b>Bộ Giáo dục và Đào tạo</b><small>Tài liệu chương trình môn học</small></span></a>
+  <a class="source" href="https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/sgv-giao-duc-kinh-te-va-phap-luat-10.4496086323" target="_blank" rel="noopener noreferrer"><span class="sicon">📚</span><span><b>Nhà xuất bản Giáo dục Việt Nam</b><small>Mục lục sách giáo viên lớp 10 — Kết nối tri thức</small></span></a>
+  <a class="source" href="https://vbpl.moj.gov.vn/bogiaoducdaotao/Pages/vbpq-toanvan.aspx?ItemID=146721" target="_blank" rel="noopener noreferrer"><span class="sicon">⚖️</span><span><b>Cơ sở dữ liệu văn bản pháp luật</b><small>Tra cứu văn bản pháp luật</small></span></a>
+ </div>
+ <p class="small" style="margin-top:18px">Quy định pháp luật có thể được sửa đổi. Khi cần thông tin hiện hành, hãy kiểm tra văn bản chính thức và hướng dẫn của giáo viên.</p>
+</section>
+<section class="slide green" data-title="Kết luận">
+ <div class="kicker">16 · Kết luận</div><h2>Hiểu để lựa chọn tốt hơn.</h2><p class="lead">Kiến thức kinh tế giúp chúng ta cân nhắc nguồn lực, quản lý tiền và hiểu trách nhiệm của mình trong cộng đồng.</p>
+ <div class="grid3">
+  <article class="card"><span class="icon">🧭</span><h3>Biết ưu tiên</h3><p>Cân nhắc khi lựa chọn giữa nhiều phương án.</p></article>
+  <article class="card"><span class="icon">💰</span><h3>Quản lý tiền</h3><p>Lập kế hoạch thu chi và tiết kiệm.</p></article>
+  <article class="card"><span class="icon">🤝</span><h3>Sống có trách nhiệm</h3><p>Tôn trọng pháp luật và cộng đồng.</p></article>
+ </div>
+ <p class="quote" style="margin-top:28px"><span class="quote-mark">“</span> Kinh tế không xa vời — nó bắt đầu từ lựa chọn nhỏ nhất mỗi ngày.</p>
+ <div class="footer-line">CẢM ƠN THẦY CÔ VÀ CÁC BẠN ĐÃ LẮNG NGHE.</div>
+</section>
+<div class="hint" id="hint">NHẤN VÙNG TRỐNG ĐỂ TIẾP TỤC ↗</div>
 </main>
-<footer><div class="wrap footer-inner"><div><a class="logo" href="#home" style="color:white"><span class="logo-mark" style="background:var(--lime);color:var(--ink)">₫</span><span>KINH TẾ KHÔNG KHÔ</span></a><p>Một góc nhỏ để học kinh tế từ những điều trong cuộc sống.</p></div><div class="footer-links"><a href="#chu-de">Chủ đề</a><a href="#lo-trinh">Bài lớp 10</a><a href="#nguon">Nguồn học liệu</a><a href="#thu-thach">Tình huống</a><a href="#cong-cu">Ôn tập</a><a href="#tu-dien">Từ điển</a></div></div></footer>
-
-<button class="present-launch" id="presentLaunch" type="button" aria-haspopup="dialog">▶ Chế độ thuyết trình</button>
-<div class="presentation" id="presentation" role="dialog" aria-modal="true" aria-label="Chế độ thuyết trình">
-  <div class="pres-progress"><span id="presProgress"></span></div>
-  <header class="pres-top"><div class="pres-brand">KINH TẾ KHÔNG KHÔ</div><div class="pres-count" id="presCount">1 / 10</div><button class="pres-close" id="presClose" type="button" aria-label="Thoát chế độ thuyết trình">✕ Thoát</button></header>
-  <main class="pres-content" id="presContent" aria-live="polite">
-    <div class="pres-eyebrow" id="presEyebrow"></div><h2 id="presTitle"></h2><p id="presIntro"></p><div class="pres-points" id="presPoints"></div>
-    <section class="pres-challenge" id="presChallenge" aria-label="Thử thách tương tác">
-      <h3 id="challengeTitle">Thử thách cả lớp</h3>
-      <p class="challenge-hint" id="challengeHint">Cùng dự đoán đáp án trước khi người thuyết trình công bố.</p>
-      <div class="challenge-options" id="challengeOptions"></div>
-      <div class="challenge-feedback" id="challengeFeedback" aria-live="polite"></div>
-    </section><div class="pres-notes" id="presNotes"><strong>Gợi ý lời thuyết trình</strong><p id="presNotesText"></p></div>
-  </main>
-  <footer class="pres-bottom"><button class="pres-notes-toggle" id="presNotesToggle" type="button">☷ Gợi ý lời nói</button><div style="display:flex;gap:8px"><button class="pres-nav" id="presPrev" type="button">← Trước</button><button class="pres-nav primary" id="presNext" type="button">Tiếp theo →</button></div></footer>
+<footer class="deckbar">
+ <div class="brand">KINH TẾ <span>KHÔNG KHÔ</span></div>
+ <div class="progress-track"><span id="progress"></span></div>
+ <div class="dots" id="dots" aria-label="Chọn trang"></div>
+ <div class="page-count" id="pageCount">01 / 16</div>
+ <div class="controls">
+  <button class="ctrl" id="prev" aria-label="Slide trước">←</button>
+  <button class="ctrl primary" id="next">Tiếp →</button>
+  <button class="ctrl" id="full" title="Toàn màn hình" aria-label="Toàn màn hình">⛶</button>
+ </div>
+</footer>
 </div>
-
-<button class="to-top" id="toTop" aria-label="Lên đầu trang">↑</button>
 <script>
-
-/* Slideshow designed for classroom presenting */
-const presSlides=[
-{eyebrow:'Mở đầu',title:'Hiểu tiền. Hiểu người. Hiểu thế giới.',intro:'Kinh tế không chỉ là những con số trong sách. Kinh tế xuất hiện trong các lựa chọn hằng ngày của chúng ta.',points:['Mua sắm và tiết kiệm','Lựa chọn cách sử dụng thời gian','Hoạt động của cửa hàng và doanh nghiệp','Vai trò của Nhà nước và pháp luật'],notes:'Mở đầu bằng một câu hỏi: “Hôm nay các bạn đã đưa ra quyết định chi tiêu hoặc lựa chọn nào?” Dẫn dắt rằng kinh tế hiện diện ngay trong đời sống.'},
-{eyebrow:'01 · Nền tảng',title:'Nguồn lực có hạn, nhu cầu đa dạng',intro:'Vì không thể có tất cả mọi thứ cùng lúc, chúng ta cần xác định ưu tiên và cân nhắc sự đánh đổi.',points:['Xác định điều mình cần nhất','So sánh các phương án','Cân nhắc hệ quả của lựa chọn','Chi phí cơ hội là phương án tốt nhất bị bỏ qua'],notes:'Ví dụ: dùng một buổi tối để học bài thì sẽ có ít thời gian chơi game hơn. Hỏi cả lớp: trong tình huống này, điều gì đã được đánh đổi?'},
-{eyebrow:'02 · Đời sống',title:'Quản lý tài chính cá nhân',intro:'Lập kế hoạch giúp chúng ta biết tiền đến từ đâu, được dùng vào việc gì và còn lại bao nhiêu.',points:['Ghi lại thu nhập và chi tiêu','Ưu tiên khoản thiết yếu','Đặt mục tiêu tiết kiệm','Theo dõi và điều chỉnh ngân sách'],notes:'Nhấn mạnh rằng ngân sách không chỉ dành cho người lớn. Học sinh cũng có thể quản lý tiền tiêu vặt bằng cách ghi các khoản thu và chi đơn giản.'},
-{eyebrow:'03 · Thị trường',title:'Sản xuất và kinh doanh',intro:'Doanh nghiệp sử dụng nguồn lực để tạo ra hàng hóa hoặc dịch vụ đáp ứng nhu cầu của khách hàng.',points:['Tìm hiểu nhu cầu khách hàng','Tính toán chi phí và giá bán','Quan tâm chất lượng sản phẩm','Doanh thu trừ chi phí bằng lợi nhuận'],notes:'Lấy ví dụ quầy bán nước: cần tính nguyên liệu, cốc, công sức và giá bán. Doanh thu cao chưa chắc lợi nhuận cao nếu chi phí cũng lớn.'},
-{eyebrow:'04 · Cộng đồng',title:'Đạo đức trong kinh doanh',intro:'Một hoạt động kinh doanh bền vững cần tạo giá trị và đối xử có trách nhiệm với khách hàng, người lao động và cộng đồng.',points:['Trung thực về sản phẩm','Niêm yết giá rõ ràng','Không quảng cáo sai sự thật','Tôn trọng khách hàng và người lao động'],notes:'Hỏi lớp: nếu một cửa hàng bán sản phẩm kém chất lượng nhưng quảng cáo quá mức, điều gì có thể xảy ra với khách hàng và uy tín cửa hàng?'},
-{eyebrow:'05 · Công dân',title:'Vai trò của Nhà nước',intro:'Nhà nước xây dựng quy tắc chung, cung cấp dịch vụ công và thực hiện các chính sách nhằm phục vụ xã hội.',points:['Thuế là một nguồn thu ngân sách','Ngân sách hỗ trợ các nhiệm vụ công','Quy định giúp điều chỉnh hoạt động kinh tế','Người dân cần tìm hiểu quyền và nghĩa vụ'],notes:'Có thể nêu ví dụ trường học công, đường giao thông hoặc dịch vụ y tế công. Tránh khẳng định rằng mọi dịch vụ công đều chỉ được tài trợ từ thuế.'},
-{eyebrow:'06 · Pháp luật',title:'Quyền đi cùng trách nhiệm',intro:'Hiểu pháp luật giúp mỗi người biết quyền của mình, thực hiện nghĩa vụ và tôn trọng quyền của người khác.',points:['Tìm hiểu quy tắc áp dụng','Thực hiện đúng quy định','Tôn trọng quyền của người khác','Kiểm tra nguồn chính thức khi cần'],notes:'Dùng tình huống gần gũi như tuân thủ quy tắc giao thông hoặc sử dụng nội dung trên mạng có trách nhiệm. Nội dung trang chỉ hỗ trợ học tập, không thay thế tư vấn pháp lý.'},
-{eyebrow:'Tình huống tương tác',title:'Bạn có 100.000 đồng cho cả tuần',intro:'Bạn cần tiền đi lại, muốn tiết kiệm và cũng muốn mua món ăn vặt mình thích. Bạn sẽ lập kế hoạch thế nào?',points:['Tính trước khoản bắt buộc','Chọn mục tiêu tiết kiệm phù hợp','Cân nhắc khoản chi cho sở thích','Giải thích vì sao phương án đó hợp lý'],notes:'Mời cả lớp đề xuất cách chia tiền. Không cần ép mọi người có cùng đáp án; yêu cầu họ giải thích ưu tiên và kiểm tra xem kế hoạch có đáp ứng khoản cần thiết hay không.'},
-{eyebrow:'Thử thách cả lớp',title:'Quầy nước hôm nay lời bao nhiêu?',intro:'Một quầy nước bán được 10 ly, mỗi ly 10.000 đồng. Tổng chi phí nguyên liệu và cốc là 60.000 đồng. Hãy cùng dự đoán kết quả!',points:['Doanh thu = số lượng bán × giá bán','Lợi nhuận = doanh thu − tổng chi phí'],notes:'Cho cả lớp giơ tay hoặc trao đổi nhanh trước khi bấm đáp án. Doanh thu là 100.000 đồng; lấy doanh thu trừ chi phí 60.000 đồng thì lợi nhuận là 40.000 đồng.',challenge:{title:'Chọn đáp án đúng',hint:'Cả lớp hãy biểu quyết trước khi bạn bấm để hiện lời giải.',options:[{label:'A · Lợi nhuận 100.000 đồng',correct:false},{label:'B · Lợi nhuận 40.000 đồng',correct:true},{label:'C · Lợi nhuận 60.000 đồng',correct:false}],feedback:'Doanh thu = 10 × 10.000 = 100.000 đồng. Lợi nhuận = 100.000 − 60.000 = 40.000 đồng.'}},
-{eyebrow:'Ôn tập nhanh',title:'Ba câu hỏi để nhớ lâu',intro:'Dừng lại một chút và thử trả lời trước khi xem lại nội dung.',points:['Chi phí cơ hội là gì?','Vì sao nên lập ngân sách?','Doanh thu khác lợi nhuận như thế nào?','Kinh doanh có trách nhiệm thể hiện ở đâu?'],notes:'Mời 2–3 bạn trả lời. Chốt lại: chi phí cơ hội là giá trị phương án tốt nhất bị bỏ qua; ngân sách giúp quản lý thu chi; lợi nhuận bằng doanh thu trừ tổng chi phí.'},
-{eyebrow:'Kết luận',title:'Hiểu để lựa chọn tốt hơn',intro:'Kiến thức kinh tế giúp chúng ta cân nhắc nguồn lực, quản lý tiền và hiểu trách nhiệm của mình trong cộng đồng.',points:['Biết ưu tiên khi lựa chọn','Quản lý tiền có kế hoạch','Đánh giá hoạt động kinh doanh','Tôn trọng quy tắc và trách nhiệm'],notes:'Kết thúc bằng câu: “Kinh tế không xa vời — nó bắt đầu từ lựa chọn nhỏ nhất mỗi ngày.” Cảm ơn cả lớp và mời đặt câu hỏi.'}
+const slides=[...document.querySelectorAll('.slide')];
+let current=0;
+const progress=document.getElementById('progress'),pageCount=document.getElementById('pageCount'),dots=document.getElementById('dots'),prev=document.getElementById('prev'),next=document.getElementById('next');
+slides.forEach((s,i)=>{const b=document.createElement('button');b.className='dot'+(i===0?' active':'');b.type='button';b.title='Đến trang '+(i+1)+': '+s.dataset.title;b.setAttribute('aria-label',b.title);b.addEventListener('click',e=>{e.stopPropagation();go(i)});dots.appendChild(b)});
+function go(index){if(index<0||index>=slides.length)return;const old=current;slides[old].classList.remove('active','exit-left');if(index>old)slides[old].classList.add('exit-left');current=index;slides[current].classList.add('active');slides[current].scrollTop=0;[...dots.children].forEach((d,i)=>d.classList.toggle('active',i===current));progress.style.width=((current+1)/slides.length*100)+'%';pageCount.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');prev.disabled=current===0;prev.style.opacity=current===0?'.35':'1';next.textContent=current===slides.length-1?'Kết thúc ✓':'Tiếp →';document.getElementById('hint').style.opacity=current===slides.length-1?'.35':'1';}
+function forward(){if(current<slides.length-1)go(current+1)}
+function back(){if(current>0)go(current-1)}
+prev.addEventListener('click',e=>{e.stopPropagation();back()});next.addEventListener('click',e=>{e.stopPropagation();if(current===slides.length-1)go(0);else forward()});
+document.getElementById('stage').addEventListener('click',e=>{if(e.target.closest('button,a,input,select,textarea'))return;if(e.target.closest('.slide')!==slides[current])return;forward()});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){if(e.target.closest('button,a'))return;e.preventDefault();forward()}if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();back()}if(e.key==='Home'){go(0)}if(e.key==='End'){go(slides.length-1)}if(e.key==='Escape'&&document.fullscreenElement)document.exitFullscreen?.()});
+let touchX=0;document.getElementById('stage').addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX},{passive:true});document.getElementById('stage').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-touchX;if(Math.abs(dx)>70){dx<0?forward():back()}},{passive:true});
+document.getElementById('full').addEventListener('click',e=>{e.stopPropagation();if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()});
+go(0);
+function bindChoice(groupId,feedbackId,success,explanation){const group=document.getElementById(groupId),feedback=document.getElementById(feedbackId);if(!group)return;group.addEventListener('click',e=>{const btn=e.target.closest('[data-correct]');if(!btn)return;[...group.querySelectorAll('button')].forEach(b=>{b.disabled=true;if(b.dataset.correct==='true')b.classList.add('correct');else if(b===btn)b.classList.add('wrong')});feedback.innerHTML='<b>'+(btn.dataset.correct==='true'?'Chính xác!': 'Chưa chính xác.')+'</b> '+explanation;feedback.classList.add('show')})}
+bindChoice('budgetOptions','budgetFeedback',true,'Hãy ưu tiên khoản bắt buộc, đặt mục tiêu tiết kiệm rồi mới cân nhắc khoản chi theo sở thích. Một kế hoạch tốt cần phù hợp với nhu cầu và hoàn cảnh thực tế.');
+bindChoice('profitOptions','profitFeedback',true,'Doanh thu = 10 × 10.000 = 100.000 đồng. Lợi nhuận = 100.000 − 60.000 = 40.000 đồng.');
+const quiz=[
+ {q:'Ngân sách giúp theo dõi thu nhập và chi tiêu.',a:true,e:'Đúng. Ngân sách giúp lập kế hoạch và theo dõi tiền vào, tiền ra.'},
+ {q:'Chi phí cơ hội chỉ là số tiền đã trả.',a:false,e:'Sai. Chi phí cơ hội là giá trị phương án tốt nhất bị bỏ qua, không nhất thiết là khoản tiền trả trực tiếp.'},
+ {q:'Doanh thu luôn bằng lợi nhuận.',a:false,e:'Sai. Lợi nhuận được xác định sau khi trừ tổng chi phí khỏi doanh thu.'},
+ {q:'Người tiêu dùng nên cân nhắc nhu cầu và khả năng tài chính.',a:true,e:'Đúng. Cân nhắc nhu cầu, ngân sách và hệ quả giúp đưa ra quyết định phù hợp.'}
 ];
-let presIndex=0;
-const pres=document.getElementById('presentation');
-function renderPres(){
- const s=presSlides[presIndex];
- document.getElementById('presEyebrow').textContent=s.eyebrow;
- document.getElementById('presTitle').textContent=s.title;
- document.getElementById('presIntro').textContent=s.intro;
- document.getElementById('presPoints').innerHTML=s.points.map(x=>'<div class="pres-point"></div>').join('');
- [...document.querySelectorAll('.pres-point')].forEach((el,i)=>el.textContent=s.points[i]);
- const challenge=document.getElementById('presChallenge');
- const hasChallenge=Boolean(s.challenge);
- challenge.classList.toggle('show',hasChallenge);
- document.getElementById('challengeFeedback').classList.remove('show');
- document.getElementById('challengeFeedback').textContent='';
- document.getElementById('challengeTitle').textContent=hasChallenge?s.challenge.title:'';
- document.getElementById('challengeHint').textContent=hasChallenge?s.challenge.hint:'';
- document.getElementById('challengeOptions').innerHTML=hasChallenge?s.challenge.options.map((o,i)=>'<button type="button" class="challenge-option" data-challenge-option="'+i+'"></button>').join(''):'';
- if(hasChallenge){[...document.querySelectorAll('.challenge-option')].forEach((el,i)=>el.textContent=s.challenge.options[i].label)}
- document.getElementById('presNotesText').textContent=s.notes;
- document.getElementById('presCount').textContent=(presIndex+1)+' / '+presSlides.length;
- document.getElementById('presProgress').style.width=((presIndex+1)/presSlides.length*100)+'%';
- document.getElementById('presPrev').disabled=presIndex===0;
- document.getElementById('presPrev').style.opacity=presIndex===0?'.45':'1';
- document.getElementById('presNext').textContent=presIndex===presSlides.length-1?'Hoàn tất ✓':'Tiếp theo →';
- document.getElementById('presContent').scrollTop=0;
-}
-function openPres(){pres.classList.add('open');document.body.style.overflow='hidden';renderPres();document.getElementById('presClose').focus()}
-function closePres(){pres.classList.remove('open');document.body.style.overflow='';document.getElementById('presentLaunch').focus()}
-document.getElementById('presentLaunch').addEventListener('click',openPres);
-document.getElementById('presClose').addEventListener('click',closePres);
-document.getElementById('presPrev').addEventListener('click',()=>{if(presIndex>0){presIndex--;renderPres()}});
-document.getElementById('presNext').addEventListener('click',()=>{if(presIndex<presSlides.length-1){presIndex++;renderPres()}else closePres()});
-document.getElementById('challengeOptions').addEventListener('click',e=>{
- const button=e.target.closest('[data-challenge-option]');
- if(!button)return;
- const s=presSlides[presIndex];
- if(!s.challenge)return;
- const index=Number(button.dataset.challengeOption);
- const option=s.challenge.options[index];
- document.querySelectorAll('.challenge-option').forEach((el,i)=>{
-   el.disabled=true;
-   if(s.challenge.options[i].correct)el.classList.add('correct');
-   else if(i===index)el.classList.add('incorrect');
- });
- const feedback=document.getElementById('challengeFeedback');
- feedback.innerHTML='<strong>'+(option.correct?'Chính xác!':'Chưa đúng — cùng xem cách tính nhé.')+'</strong>'+s.challenge.feedback;
- feedback.classList.add('show');
-});
-document.getElementById('presNotesToggle').addEventListener('click',()=>{const n=document.getElementById('presNotes');const show=!n.classList.contains('show');n.classList.toggle('show',show);document.getElementById('presNotesToggle').textContent=show?'☷ Ẩn gợi ý lời nói':'☷ Gợi ý lời nói'});
-document.addEventListener('keydown',e=>{if(!pres.classList.contains('open'))return;if(e.key==='Escape'){closePres();return}if(e.target.closest('button'))return;if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();if(presIndex<presSlides.length-1){presIndex++;renderPres()}else closePres()}if(e.key==='ArrowLeft'){e.preventDefault();if(presIndex>0){presIndex--;renderPres()}}});
-
-const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navlinks');
-menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}));
-document.querySelectorAll('.choice').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.choice').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');const f=document.getElementById('feedback');f.classList.add('show');if(btn.dataset.correct==='true'){f.innerHTML='<strong>Chính xác — đây là một cách lập kế hoạch hợp lý!</strong>Ưu tiên khoản cần thiết trước, xác định mục tiêu tiết kiệm và dành phần còn lại cho mong muốn giúp bạn kiểm soát chi tiêu. Tình huống thực tế có thể có nhiều cách phân bổ phù hợp.'}else{f.innerHTML='<strong>Thử cân nhắc lại nhé!</strong>Hãy xác định khoản bắt buộc trước, sau đó mới quyết định phần dành cho sở thích. Kinh tế học khuyến khích ta cân nhắc nguồn lực hữu hạn và hệ quả của lựa chọn.'}}));
-const flashcards=[['Chi phí cơ hội là gì?','Giá trị của phương án tốt nhất bị bỏ qua khi bạn chọn phương án khác.'],['Ngân sách là gì?','Kế hoạch dự kiến các khoản thu và chi trong một khoảng thời gian.'],['Lợi nhuận được tính thế nào?','Lợi nhuận = Doanh thu − Tổng chi phí.'],['Cung và cầu có ý nghĩa gì?','Cung thể hiện phía người bán; cầu thể hiện phía người mua trên thị trường.'],['Đạo đức kinh doanh là gì?','Những nguyên tắc giúp hoạt động kinh doanh trung thực và có trách nhiệm.']];
-let fi=0,flipped=false;function renderFlash(){document.getElementById('flashTerm').textContent=flipped?flashcards[fi][1]:flashcards[fi][0];document.getElementById('flashHint').textContent=flipped?'Đáp án · Nhấn để xem câu hỏi':'Thẻ '+(fi+1)+' / '+flashcards.length+' · Nhấn để lật';document.getElementById('flashProgress').style.width=((fi+1)/flashcards.length*100)+'%'}function flipFlash(){flipped=!flipped;renderFlash()}document.getElementById('flashcard').addEventListener('click',flipFlash);document.getElementById('flashcard').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flipFlash()}});document.getElementById('prevFlash').addEventListener('click',()=>{fi=(fi+flashcards.length-1)%flashcards.length;flipped=false;renderFlash()});document.getElementById('nextFlash').addEventListener('click',()=>{fi=(fi+1)%flashcards.length;flipped=false;renderFlash()});renderFlash();
-const quiz=[{q:'Ngân sách giúp theo dõi thu nhập và chi tiêu.',a:true,e:'Ngân sách giúp lập kế hoạch và theo dõi tiền vào, tiền ra.'},{q:'Chi phí cơ hội chỉ là số tiền đã trả.',a:false,e:'Chi phí cơ hội là giá trị phương án tốt nhất bị bỏ qua, không nhất thiết là khoản tiền trả trực tiếp.'},{q:'Doanh thu luôn bằng lợi nhuận.',a:false,e:'Lợi nhuận được xác định sau khi trừ chi phí khỏi doanh thu.'},{q:'Người tiêu dùng nên cân nhắc nhu cầu và khả năng tài chính.',a:true,e:'Cân nhắc nhu cầu, ngân sách và hệ quả giúp đưa ra quyết định phù hợp.'}];let qi=0,answered=false;function renderQuiz(){document.getElementById('quizQuestion').textContent=quiz[qi].q;document.getElementById('quizCount').textContent='Câu '+(qi+1)+' / '+quiz.length;document.getElementById('quizFeedback').textContent='Chọn Đúng hoặc Sai để xem giải thích.';document.getElementById('quizProgress').style.width=((qi+1)/quiz.length*100)+'%';answered=false}function answerQuiz(val){if(answered)return;answered=true;const correct=val===quiz[qi].a;document.getElementById('quizFeedback').textContent=(correct?'Đúng rồi! ':'Chưa chính xác. ')+quiz[qi].e}document.getElementById('quizTrue').addEventListener('click',()=>answerQuiz(true));document.getElementById('quizFalse').addEventListener('click',()=>answerQuiz(false));document.getElementById('quizNext').addEventListener('click',()=>{qi=(qi+1)%quiz.length;renderQuiz()});renderQuiz();
-const search=document.getElementById('termSearch'),terms=[...document.querySelectorAll('.term')];search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase('vi');let count=0;terms.forEach(t=>{const match=(t.textContent+' '+t.dataset.key).toLocaleLowerCase('vi').includes(q);t.style.display=match?'':'none';if(match)count++});document.getElementById('emptyMsg').style.display=count?'none':'block'});
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));const toTop=document.getElementById('toTop');window.addEventListener('scroll',()=>toTop.classList.toggle('show',window.scrollY>500),{passive:true});toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
+let qi=0,answered=false;
+function renderQuiz(){const q=quiz[qi];document.getElementById('quizCount').textContent='CÂU '+(qi+1)+' / '+quiz.length;document.getElementById('quizQuestion').textContent=q.q;document.getElementById('quizFeedback').textContent='Chọn Đúng hoặc Sai để xem giải thích.';document.getElementById('quizFeedback').classList.add('show');document.getElementById('quizProgress').style.width=((qi+1)/quiz.length*100)+'%';document.getElementById('quizTrue').disabled=false;document.getElementById('quizFalse').disabled=false;document.getElementById('quizTrue').classList.remove('correct','wrong');document.getElementById('quizFalse').classList.remove('correct','wrong');answered=false}
+function answerQuiz(val){if(answered)return;answered=true;const q=quiz[qi],correct=val===q.a;const chosen=document.getElementById(val?'quizTrue':'quizFalse');chosen.classList.add(correct?'correct':'wrong');document.getElementById(q.a?'quizTrue':'quizFalse').classList.add('correct');document.getElementById('quizTrue').disabled=true;document.getElementById('quizFalse').disabled=true;document.getElementById('quizFeedback').textContent=(correct?'Chính xác! ':'Chưa đúng. ')+q.e}
+document.getElementById('quizTrue').addEventListener('click',()=>answerQuiz(true));document.getElementById('quizFalse').addEventListener('click',()=>answerQuiz(false));document.getElementById('quizNext').addEventListener('click',()=>{qi=(qi+1)%quiz.length;renderQuiz()});renderQuiz();
 </script>
 </body>
 </html>
