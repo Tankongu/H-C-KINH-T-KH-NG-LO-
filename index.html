@@ -66,6 +66,16 @@ h3{font-size:clamp(19px,2vw,25px);letter-spacing:-.025em;margin-bottom:9px}
 @media(max-width:800px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:210px}.hero-orbit{width:190px}.float-tag.one{left:10%}.float-tag.two{right:6%}.budget-layout{grid-template-columns:1fr}.curriculum{grid-template-columns:repeat(2,minmax(0,1fr))}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.term-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.slide{padding:28px 26px 30px}}
 @media(max-width:560px){.grid2,.grid3,.grid4,.curriculum,.term-grid{grid-template-columns:1fr}.slide{padding:25px 20px 28px}.deckbar{gap:8px;padding:9px 10px}.brand{font-size:10px}.dots{display:none}.ctrl{padding:8px 9px}.page-count{min-width:40px}.hint{display:none}.hero-art{min-height:180px}.money-panel{min-height:190px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Minh họa trực quan cho các slide */
+.visual-panel{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;margin-top:20px}
+.visual-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:14px;min-width:0;overflow:hidden}
+.visual-card svg{display:block;width:100%;height:auto;max-height:220px}
+.dark .visual-card{background:#19382f;border-color:#ffffff20}
+.visual-caption{font-size:12px;color:var(--muted);text-align:center;margin:8px 0 0}
+.dark .visual-caption{color:#c5d2c7}
+@media(max-width:700px){.visual-panel{grid-template-columns:1fr 1fr;gap:10px}.visual-card{padding:8px}}
+@media(max-width:480px){.visual-panel{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -78,30 +88,33 @@ h3{font-size:clamp(19px,2vw,25px);letter-spacing:-.025em;margin-bottom:9px}
  </div><div class="footer-line">MỘT GÓC NHÌN MỚI VỀ KINH TẾ <span>✳</span> LỚP 10</div>
 </section>
 <section class="slide" data-title="Kinh tế quanh ta">
- <div class="kicker">01 · Khởi động</div><h2>Kinh tế có ở khắp mọi nơi.</h2><p class="lead">Kinh tế không chỉ là tiền bạc hay những con số. Đó là cách chúng ta lựa chọn và sử dụng nguồn lực mỗi ngày.</p>
+ <div class="kicker">01 · Khởi động</div><h2>Kinh tế có ở khắp mọi nơi.</h2><p class="lead">Kinh tế không chỉ nói về tiền bạc. Kinh tế còn nghiên cứu cách con người lựa chọn và sử dụng những nguồn lực có hạn để đáp ứng nhu cầu.</p>
  <div class="grid3">
   <article class="card"><span class="icon">🛍️</span><h3>Mua sắm</h3><p>So sánh giá cả, chất lượng và nhu cầu trước khi quyết định.</p></article>
   <article class="card"><span class="icon">🐷</span><h3>Tiết kiệm</h3><p>Phân chia tiền tiêu vặt và đặt mục tiêu cho tương lai.</p></article>
   <article class="card"><span class="icon">🏪</span><h3>Kinh doanh</h3><p>Cửa hàng tính chi phí, định giá và phục vụ khách hàng.</p></article>
  </div>
- <p class="quote" style="margin-top:28px"><span class="quote-mark">“</span> Mỗi ngày, chúng ta đều đưa ra những quyết định kinh tế.</p>
+ <p class="quote" style="margin-top:28px"><span class="quote-mark">“</span> Mỗi ngày, chúng ta đều đưa ra những quyết định kinh tế.</p><div class="visual-panel" aria-label="Minh họa các hoạt động kinh tế">
+ <div class="visual-card"><svg viewBox="0 0 420 190" role="img" aria-label="Người mua lựa chọn hàng hóa ở cửa hàng"><rect x="28" y="55" width="160" height="105" rx="12" fill="#e7eddf"/><path d="M18 58h180l-18-34H36z" fill="#245b47"/><path d="M48 58v-20m40 20v-20m40 20v-20" stroke="#c9e27b" stroke-width="8"/><rect x="53" y="85" width="42" height="75" rx="5" fill="#fffdf7"/><rect x="112" y="86" width="54" height="30" rx="5" fill="#e78a51"/><circle cx="275" cy="58" r="25" fill="#e7b18a"/><path d="M238 160q3-67 37-67t39 67" fill="#245b47"/><path d="M290 112l44 20" stroke="#e7b18a" stroke-width="13" stroke-linecap="round"/><rect x="320" y="110" width="48" height="38" rx="6" fill="#c9e27b"/><circle cx="344" cy="128" r="9" fill="#245b47"/></svg><p class="visual-caption">Mua sắm: cân nhắc nhu cầu và giá cả</p></div>
+ <div class="visual-card"><svg viewBox="0 0 420 190" role="img" aria-label="Ống tiết kiệm và mục tiêu tài chính"><rect x="70" y="75" width="170" height="82" rx="38" fill="#e78a51"/><circle cx="155" cy="116" r="28" fill="#fff0d9"/><path d="M140 68h30" stroke="#245b47" stroke-width="8" stroke-linecap="round"/><path d="M155 55v-22" stroke="#245b47" stroke-width="5"/><path d="M145 33h20" stroke="#245b47" stroke-width="5"/><path d="M260 145l65-65 30 30 40-65" fill="none" stroke="#245b47" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M372 45h23v23" fill="none" stroke="#e78a51" stroke-width="8"/></svg><p class="visual-caption">Tiết kiệm: dành tiền cho mục tiêu</p></div>
+</div>
 </section>
 <section class="slide green" data-title="Nguồn lực và lựa chọn">
- <div class="kicker">02 · Nền tảng kinh tế</div><h2>Nhu cầu đa dạng.<br>Nguồn lực có hạn.</h2><p class="lead">Vì không thể có tất cả mọi thứ cùng lúc, con người phải lựa chọn và chấp nhận sự đánh đổi.</p>
+ <div class="kicker">02 · Nền tảng kinh tế</div><h2>Nhu cầu đa dạng.<br>Nguồn lực có hạn.</h2><p class="lead">Nguồn lực như thời gian, tiền bạc và nguyên liệu đều có giới hạn. Vì vậy, mỗi người phải lựa chọn và chấp nhận sự đánh đổi.</p>
  <div class="grid3">
   <article class="card"><div class="big-number">01</div><h3>Xác định ưu tiên</h3><p>Điều gì thực sự cần thiết và quan trọng nhất?</p></article>
   <article class="card"><div class="big-number">02</div><h3>So sánh phương án</h3><p>Mỗi lựa chọn đem lại lợi ích và giới hạn nào?</p></article>
   <article class="card"><div class="big-number">03</div><h3>Cân nhắc hệ quả</h3><p>Ta phải từ bỏ điều gì khi chọn một phương án?</p></article>
  </div>
- <div class="flow"><span>Nhu cầu</span><b>→</b><span>Lựa chọn</span><b>→</b><span>Đánh đổi</span><b>→</b><span>Kết quả</span></div>
+ <div class="flow"><span>Nhu cầu</span><b>→</b><span>Lựa chọn</span><b>→</b><span>Đánh đổi</span><b>→</b><span>Kết quả</span></div><div class="visual-card" style="margin-top:16px"><svg viewBox="0 0 760 150" role="img" aria-label="Nguồn lực có hạn khiến con người phải lựa chọn"><rect x="15" y="25" width="210" height="100" rx="16" fill="#245b47"/><text x="120" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="#fffdf7">NGUỒN LỰC</text><text x="120" y="91" text-anchor="middle" font-size="15" fill="#c9e27b">có giới hạn</text><path d="M235 75h65m-14-12 14 12-14 12" stroke="#e78a51" stroke-width="6" fill="none"/><rect x="315" y="25" width="180" height="100" rx="16" fill="#e7eddf"/><text x="405" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="#18352d">LỰA CHỌN</text><text x="405" y="91" text-anchor="middle" font-size="15" fill="#245b47">ưu tiên</text><path d="M505 75h65m-14-12 14 12-14 12" stroke="#e78a51" stroke-width="6" fill="none"/><rect x="585" y="25" width="160" height="100" rx="16" fill="#e78a51"/><text x="665" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="#18352d">ĐÁNH ĐỔI</text><text x="665" y="91" text-anchor="middle" font-size="15" fill="#18352d">và kết quả</text></svg></div>
 </section>
 <section class="slide" data-title="Chi phí cơ hội">
  <div class="kicker">03 · Khái niệm quan trọng</div><h2>Chi phí cơ hội là gì?</h2><p class="lead">Là giá trị của phương án tốt nhất bị bỏ qua khi ta lựa chọn một phương án khác.</p>
  <div class="grid2">
-  <article class="card"><span class="icon">🎮</span><h3>Chọn chơi game</h3><p>Bạn dành buổi tối để chơi game thay vì học bài. Cơ hội học tập đã bị giảm đi.</p></article>
-  <article class="card"><span class="icon">📚</span><h3>Chọn học bài</h3><p>Bạn dành thời gian ôn tập, đổi lại có ít thời gian giải trí hơn.</p></article>
+  <article class="card"><span class="icon">🎮</span><h3>Chọn chơi game</h3><p>Nếu chơi game là lựa chọn của bạn, chi phí cơ hội có thể là giá trị của buổi ôn tập mà bạn đã bỏ qua.</p></article>
+  <article class="card"><span class="icon">📚</span><h3>Chọn học bài</h3><p>Nếu chọn học bài, chi phí cơ hội có thể là giá trị của khoảng thời gian giải trí tốt nhất mà bạn không còn.</p></article>
  </div>
- <p class="quote" style="margin-top:25px">Điều quan trọng không chỉ là ta chọn gì, mà còn là ta đã bỏ qua điều gì.</p>
+ <p class="quote" style="margin-top:25px">Điều quan trọng không chỉ là ta chọn gì, mà còn là ta đã bỏ qua điều gì.</p><div class="visual-panel"><div class="visual-card"><svg viewBox="0 0 420 170" role="img" aria-label="Hai lựa chọn sử dụng thời gian"><circle cx="210" cy="28" r="18" fill="#e78a51"/><path d="M210 48v22M210 70L105 112M210 70l105 42" stroke="#245b47" stroke-width="5" fill="none"/><rect x="35" y="112" width="140" height="42" rx="10" fill="#e7eddf"/><rect x="245" y="112" width="140" height="42" rx="10" fill="#c9e27b"/><text x="105" y="139" text-anchor="middle" font-size="15" font-weight="bold" fill="#18352d">HỌC BÀI</text><text x="315" y="139" text-anchor="middle" font-size="15" font-weight="bold" fill="#18352d">GIẢI TRÍ</text></svg><p class="visual-caption">Cùng một khoảng thời gian, nhiều phương án sử dụng</p></div><div class="visual-card"><svg viewBox="0 0 420 170" role="img" aria-label="Chi phí cơ hội là phương án tốt nhất bị bỏ qua"><rect x="35" y="28" width="150" height="105" rx="14" fill="#245b47"/><text x="110" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#fffdf7">PHƯƠNG ÁN</text><text x="110" y="94" text-anchor="middle" font-size="16" font-weight="bold" fill="#c9e27b">ĐƯỢC CHỌN</text><path d="M195 80h35m-12-12 12 12-12 12" stroke="#e78a51" stroke-width="6" fill="none"/><rect x="245" y="28" width="150" height="105" rx="14" fill="#f7e6d9"/><text x="320" y="66" text-anchor="middle" font-size="15" font-weight="bold" fill="#18352d">GIÁ TRỊ TỐT</text><text x="320" y="89" text-anchor="middle" font-size="15" font-weight="bold" fill="#18352d">NHẤT BỊ BỎ QUA</text></svg><p class="visual-caption">Đó chính là chi phí cơ hội</p></div></div>
 </section>
 <section class="slide dark" data-title="Bốn hoạt động kinh tế">
  <div class="kicker">04 · Bức tranh tổng quan</div><h2>Bốn hoạt động cơ bản của nền kinh tế.</h2><p class="lead">Các hoạt động liên kết với nhau, tạo nên quá trình vận hành của đời sống kinh tế.</p>
@@ -111,15 +124,15 @@ h3{font-size:clamp(19px,2vw,25px);letter-spacing:-.025em;margin-bottom:9px}
   <article class="card"><span class="icon">🤝</span><h3>Trao đổi</h3><p>Mua bán, chuyển giao hàng hóa.</p></article>
   <article class="card"><span class="icon">🧑‍🤝‍🧑</span><h3>Tiêu dùng</h3><p>Sử dụng hàng hóa, dịch vụ.</p></article>
  </div>
- <div class="flow"><span>Sản xuất</span><b>→</b><span>Phân phối</span><b>→</b><span>Trao đổi</span><b>→</b><span>Tiêu dùng</span></div>
+ <div class="flow"><span>Sản xuất</span><b>→</b><span>Phân phối</span><b>→</b><span>Trao đổi</span><b>→</b><span>Tiêu dùng</span></div><div class="visual-card" style="margin-top:12px"><svg viewBox="0 0 760 155" role="img" aria-label="Chu trình bốn hoạt động kinh tế"><g font-size="17" font-weight="bold" text-anchor="middle"><rect x="12" y="28" width="155" height="92" rx="15" fill="#245b47"/><text x="89" y="82" fill="#fffdf7">SẢN XUẤT</text><path d="M176 74h25m-10-9 10 9-10 9" stroke="#e78a51" stroke-width="5" fill="none"/><rect x="210" y="28" width="155" height="92" rx="15" fill="#e7eddf"/><text x="287" y="82" fill="#18352d">PHÂN PHỐI</text><path d="M374 74h25m-10-9 10 9-10 9" stroke="#e78a51" stroke-width="5" fill="none"/><rect x="408" y="28" width="155" height="92" rx="15" fill="#c9e27b"/><text x="485" y="82" fill="#18352d">TRAO ĐỔI</text><path d="M572 74h25m-10-9 10 9-10 9" stroke="#e78a51" stroke-width="5" fill="none"/><rect x="606" y="28" width="142" height="92" rx="15" fill="#e78a51"/><text x="677" y="82" fill="#18352d">TIÊU DÙNG</text></g></svg><p class="visual-caption">Bốn hoạt động có quan hệ chặt chẽ và tác động qua lại</p></div>
 </section>
 <section class="slide" data-title="Thị trường">
  <div class="kicker">05 · Thị trường</div><h2>Người mua và người bán gặp nhau.</h2><p class="lead">Thị trường là nơi diễn ra các quan hệ mua bán, trao đổi hàng hóa và dịch vụ. Giá cả có thể thay đổi theo cung, cầu và nhiều yếu tố khác.</p>
  <div class="grid2">
-  <article class="card"><span class="icon">🧺</span><h3>Cung</h3><p>Lượng hàng hóa, dịch vụ mà người bán sẵn sàng cung cấp ở những mức giá nhất định.</p></article>
-  <article class="card"><span class="icon">🛒</span><h3>Cầu</h3><p>Nhu cầu có khả năng thanh toán của người mua đối với hàng hóa, dịch vụ.</p></article>
+  <article class="card"><span class="icon">🧺</span><h3>Cung</h3><p>Số lượng hàng hóa, dịch vụ người bán sẵn sàng và có khả năng bán ở các mức giá khác nhau trong một thời kỳ nhất định.</p></article>
+  <article class="card"><span class="icon">🛒</span><h3>Cầu</h3><p>Số lượng hàng hóa, dịch vụ người mua sẵn sàng và có khả năng mua ở các mức giá khác nhau trong một thời kỳ nhất định.</p></article>
  </div>
- <div class="card" style="margin-top:14px"><b>Ví dụ:</b> Khi nhiều người muốn mua một món hàng nhưng lượng hàng ít, giá có thể tăng. Tuy nhiên, giá thực tế còn phụ thuộc nhiều yếu tố.</div>
+ <div class="card" style="margin-top:14px"><b>Ví dụ:</b> Khi nhiều người muốn mua một món hàng nhưng lượng hàng ít, giá có thể tăng. Tuy nhiên, giá thực tế còn phụ thuộc nhiều yếu tố.</div><div class="visual-card" style="margin-top:14px"><svg viewBox="0 0 680 180" role="img" aria-label="Minh họa cung và cầu trên thị trường"><path d="M70 145V25M70 145H620" stroke="#18352d" stroke-width="3"/><path d="M130 40L550 125" stroke="#245b47" stroke-width="7" stroke-linecap="round"/><path d="M130 125L550 40" stroke="#e78a51" stroke-width="7" stroke-linecap="round"/><circle cx="340" cy="82" r="9" fill="#c9e27b" stroke="#18352d" stroke-width="3"/><text x="560" y="132" font-size="16" font-weight="bold" fill="#245b47">Cung</text><text x="560" y="38" font-size="16" font-weight="bold" fill="#c46b3b">Cầu</text><text x="78" y="18" font-size="12" fill="#68766d">Giá</text><text x="585" y="165" font-size="12" fill="#68766d">Lượng</text></svg><p class="visual-caption">Sơ đồ khái quát: cung và cầu có thể tác động đến giá cả</p></div>
 </section>
 <section class="slide green" data-title="Tài chính cá nhân">
  <div class="kicker">06 · Đời sống</div><h2>Quản lý tài chính cá nhân.</h2><p class="lead">Biết tiền đến từ đâu, được dùng vào việc gì và còn lại bao nhiêu giúp chúng ta chủ động hơn.</p>
@@ -179,7 +192,7 @@ h3{font-size:clamp(19px,2vw,25px);letter-spacing:-.025em;margin-bottom:9px}
  <div class="kicker">11 · Công dân và cộng đồng</div><h2>Nhà nước, ngân sách và pháp luật.</h2><p class="lead">Nhà nước xây dựng khuôn khổ pháp luật, thực hiện chính sách và cung cấp các dịch vụ công phục vụ xã hội.</p>
  <div class="grid3">
   <article class="card"><span class="icon">🏛️</span><h3>Ngân sách</h3><p>Kế hoạch các khoản thu, chi của Nhà nước trong một thời kỳ.</p></article>
-  <article class="card"><span class="icon">₫</span><h3>Thuế</h3><p>Một nguồn thu quan trọng của ngân sách nhà nước.</p></article>
+  <article class="card"><span class="icon">₫</span><h3>Thuế</h3><p>Khoản thu bắt buộc theo quy định pháp luật, là nguồn thu quan trọng của ngân sách nhà nước.</p></article>
   <article class="card"><span class="icon">⚖️</span><h3>Pháp luật</h3><p>Quy tắc chung giúp điều chỉnh hành vi và bảo vệ trật tự xã hội.</p></article>
  </div>
  <p class="quote" style="margin-top:25px">Quyền đi cùng trách nhiệm. Hiểu luật để biết quyền, thực hiện nghĩa vụ và tôn trọng người khác.</p>
@@ -206,9 +219,9 @@ h3{font-size:clamp(19px,2vw,25px);letter-spacing:-.025em;margin-bottom:9px}
   <div class="term"><b>Cung</b><span>Phía người bán trên thị trường.</span></div>
   <div class="term"><b>Cầu</b><span>Nhu cầu có khả năng thanh toán.</span></div>
   <div class="term"><b>Ngân sách</b><span>Kế hoạch dự kiến thu và chi.</span></div>
-  <div class="term"><b>Tiết kiệm</b><span>Phần thu nhập chưa sử dụng cho tiêu dùng.</span></div>
+  <div class="term"><b>Tiết kiệm</b><span>Phần thu nhập được dành lại, chưa sử dụng cho tiêu dùng ở hiện tại.</span></div>
   <div class="term"><b>Doanh thu</b><span>Tiền thu từ hoạt động bán hàng, cung cấp dịch vụ.</span></div>
-  <div class="term"><b>Lợi nhuận</b><span>Doanh thu sau khi trừ tổng chi phí.</span></div>
+  <div class="term"><b>Lợi nhuận</b><span>Phần chênh lệch giữa doanh thu và tổng chi phí.</span></div>
   <div class="term"><b>Lạm phát</b><span>Mức giá chung tăng liên tục theo thời gian.</span></div>
   <div class="term"><b>Cạnh tranh</b><span>Sự ganh đua để đạt lợi thế trên thị trường.</span></div>
   <div class="term"><b>Tín dụng</b><span>Quan hệ sử dụng vốn có nghĩa vụ hoàn trả.</span></div>
