@@ -14,6 +14,27 @@
 .slide{position:absolute;inset:0;padding:clamp(24px,5vw,76px) clamp(24px,7vw,112px) 48px;display:flex;flex-direction:column;justify-content:center;opacity:0;visibility:hidden;transform:translateX(36px) scale(.99);transition:opacity .38s ease,transform .48s cubic-bezier(.2,.7,.2,1),visibility .38s;overflow:auto;overscroll-behavior:contain;cursor:default}
 .slide.active{opacity:1;visibility:visible;transform:translateX(0) scale(1);z-index:2}
 .slide.exit-left{transform:translateX(-36px) scale(.99)}
+/* Chuyển slide mềm hơn: trượt, thu phóng nhẹ và làm nét dần */
+.slide{filter:blur(6px);transition:opacity .42s ease,transform .58s cubic-bezier(.2,.75,.25,1),filter .5s ease,visibility .42s}
+.slide.active{filter:blur(0)}
+.slide.enter-from-right{transform:translateX(72px) scale(.965);filter:blur(9px)}
+.slide.enter-from-left{transform:translateX(-72px) scale(.965);filter:blur(9px)}
+.slide.exit-right{transform:translateX(72px) scale(.965);filter:blur(8px);opacity:0}
+.slide.exit-left{transform:translateX(-72px) scale(.965);filter:blur(8px);opacity:0}
+/* Số liệu bật nhẹ và hiện dần khi slide xuất hiện */
+@keyframes numberReveal{
+  0%{opacity:0;transform:translateY(22px) scale(.88);filter:blur(5px)}
+  65%{opacity:1;transform:translateY(-3px) scale(1.035);filter:blur(0)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+.slide.active .big-number,.slide.active .amount{
+  animation:numberReveal .72s cubic-bezier(.2,.8,.25,1) both;
+}
+.slide.active .grid2 .card:nth-child(2) .big-number{animation-delay:.12s}
+.slide.active .grid3 .card:nth-child(2) .big-number{animation-delay:.1s}
+.slide.active .grid3 .card:nth-child(3) .big-number{animation-delay:.2s}
+.slide.active .money-panel .amount{animation-delay:.08s}
+
 .slide.dark{background:var(--deep);color:#f5f2e9}.slide.green{background:#e7eddf}.slide.paper{background:var(--paper)}
 .slide:after{content:"";position:absolute;right:-130px;top:-180px;width:390px;height:390px;border:1px solid #245b4718;border-radius:50%;pointer-events:none}
 .slide.dark:after{border-color:#c9e27b22}
@@ -289,7 +310,7 @@ const slides=[...document.querySelectorAll('.slide')];
 let current=0;
 const progress=document.getElementById('progress'),pageCount=document.getElementById('pageCount'),dots=document.getElementById('dots'),prev=document.getElementById('prev'),next=document.getElementById('next');
 slides.forEach((s,i)=>{const b=document.createElement('button');b.className='dot'+(i===0?' active':'');b.type='button';b.title='Đến trang '+(i+1)+': '+s.dataset.title;b.setAttribute('aria-label',b.title);b.addEventListener('click',e=>{e.stopPropagation();go(i)});dots.appendChild(b)});
-function go(index){if(index<0||index>=slides.length)return;const old=current;slides[old].classList.remove('active','exit-left');if(index>old)slides[old].classList.add('exit-left');current=index;slides[current].classList.add('active');slides[current].scrollTop=0;[...dots.children].forEach((d,i)=>d.classList.toggle('active',i===current));progress.style.width=((current+1)/slides.length*100)+'%';pageCount.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');prev.disabled=current===0;prev.style.opacity=current===0?'.35':'1';next.textContent=current===slides.length-1?'Kết thúc ✓':'Tiếp →';document.getElementById('hint').style.opacity=current===slides.length-1?'.35':'1';}
+function go(index){if(index<0||index>=slides.length)return;const old=current,forward=index>old;slides[old].classList.remove('active','exit-left','exit-right','enter-from-left','enter-from-right');slides[old].classList.add(forward?'exit-left':'exit-right');current=index;slides[current].classList.remove('exit-left','exit-right','enter-from-left','enter-from-right');slides[current].classList.add(forward?'enter-from-right':'enter-from-left');void slides[current].offsetWidth;slides[current].classList.add('active');slides[current].scrollTop=0;setTimeout(()=>{slides[old].classList.remove('exit-left','exit-right');slides[current].classList.remove('enter-from-left','enter-from-right')},650);[...dots.children].forEach((d,i)=>d.classList.toggle('active',i===current));progress.style.width=((current+1)/slides.length*100)+'%';pageCount.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');prev.disabled=current===0;prev.style.opacity=current===0?'.35':'1';next.textContent=current===slides.length-1?'Kết thúc ✓':'Tiếp →';document.getElementById('hint').style.opacity=current===slides.length-1?'.35':'1';}
 function forward(){if(current<slides.length-1)go(current+1)}
 function back(){if(current>0)go(current-1)}
 prev.addEventListener('click',e=>{e.stopPropagation();back()});next.addEventListener('click',e=>{e.stopPropagation();if(current===slides.length-1)go(0);else forward()});
